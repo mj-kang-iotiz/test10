@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14465468385694723565">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_app.h&quot; not found." verbose="Include file: &quot;gps_app.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;led.h&quot; not found." verbose="Include file: &quot;led.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;tcp_socket.h&quot; not found." verbose="Include file: &quot;tcp_socket.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.c" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;base_auto_fix.h&quot; not found." verbose="Include file: &quot;base_auto_fix.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485_app.h&quot; not found." verbose="Include file: &quot;rs485_app.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.c" line="18" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/gsm/ntrip_app.c">
+            <location file="modules/gsm/ntrip_app.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret&apos; can be reduced." verbose="The scope of the variable &apos;ret&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/ntrip_app.c">
+            <location file="modules/gsm/ntrip_app.c" line="162" column="7"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret&apos; can be reduced." verbose="The scope of the variable &apos;ret&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/ntrip_app.c">
+            <location file="modules/gsm/ntrip_app.c" line="314" column="7"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;queued_gga&apos; shadows outer variable" verbose="Local variable &apos;queued_gga&apos; shadows outer variable" cwe="398" file0="modules/gsm/ntrip_app.c">
+            <location file="modules/gsm/ntrip_app.c" line="559" column="23" info="Shadow variable"/>
+            <location file="modules/gsm/ntrip_app.c" line="535" column="21" info="Shadowed declaration"/>
+            <symbol>queued_gga</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/gsm/ntrip_app.c">
+            <location file="modules/gsm/ntrip_app.c" line="97" column="18" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/gsm/ntrip_app.c:45:12" call-funcname="base64_encode" call-argnr="1" file="modules/gsm/ntrip_app.c" line="109" col="34" call-argexpr="credentials" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/gsm/ntrip_app.c:45:12" call-funcname="base64_encode" call-argnr="3" file="modules/gsm/ntrip_app.c" line="109" col="34" call-argexpr="encoded_credentials" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="modules/gsm/ntrip_app.c:94:12" call-funcname="ntrip_build_http_request" call-argnr="1" file="modules/gsm/ntrip_app.c" line="169" col="31" call-argexpr="g_ntrip_http_request" call-argvaluetype="7" call-argvalue="512" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="base64_encode" lineNumber="45" column="12"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_build_http_request" lineNumber="94" column="12"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_connect_to_server" lineNumber="160" column="12"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_gga_send_task" lineNumber="267" column="13"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_tcp_recv_task" lineNumber="308" column="13"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_task_create" lineNumber="650" column="6"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_send_gga_data" lineNumber="656" column="5"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_gga_send_queue_initialized" lineNumber="694" column="6"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_stop" lineNumber="699" column="6"/>
+    <functiondecl file="modules/gsm/ntrip_app.c" functionName="ntrip_is_connected" lineNumber="815" column="6"/>
+    <functioncall functionName="LED_COLOR_GREEN"/>
+    <functioncall functionName="LED_COLOR_NONE"/>
+    <functioncall functionName="LED_COLOR_RED"/>
+    <functioncall functionName="LED_COLOR_YELLOW"/>
+    <functioncall functionName="LED_ID_1"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="atoi"/>
+    <functioncall functionName="base64_encode"/>
+    <functioncall functionName="base_auto_fix_on_ntrip_connected"/>
+    <functioncall functionName="eTaskGetState"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="gps_get_instance_handle"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="ntrip_build_http_request"/>
+    <functioncall functionName="ntrip_connect_to_server"/>
+    <functioncall functionName="ntrip_gga_send_task"/>
+    <functioncall functionName="ntrip_tcp_recv_task"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="strtok"/>
+    <functioncall functionName="tcp_close"/>
+    <functioncall functionName="tcp_close_force"/>
+    <functioncall functionName="tcp_connect"/>
+    <functioncall functionName="tcp_get_socket_state"/>
+    <functioncall functionName="tcp_recv"/>
+    <functioncall functionName="tcp_send"/>
+    <functioncall functionName="tcp_socket_create"/>
+    <functioncall functionName="tcp_socket_destroy"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="uxQueueMessagesWaiting"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueReset"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xTaskCreate"/>
+  </FileInfo>
+</analyzerinfo>

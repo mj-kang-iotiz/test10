@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12363290564573561032">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/params/flash_params.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/params/flash_params.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="modules/params/flash_params.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal_flash.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal_flash.h&quot; not found.">
+            <location file="modules/params/flash_params.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/params/flash_params.c" line="8" column="0"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;len&apos; is assigned a value that is never used." verbose="Variable &apos;len&apos; is assigned a value that is never used." cwe="563" file0="modules/params/flash_params.c">
+            <location file="modules/params/flash_params.c" line="103" column="16"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;len&apos; is assigned a value that is never used." verbose="Variable &apos;len&apos; is assigned a value that is never used." cwe="563" file0="modules/params/flash_params.c">
+            <location file="modules/params/flash_params.c" line="103" column="12"/>
+            <symbol>len</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/params/flash_params.h:33:19" call-funcname="flash_params_read" call-argnr="1" file="modules/params/flash_params.c" line="148" col="26" call-argexpr="&amp;verify" call-argvaluetype="7" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/params/flash_params.h:33:19" call-funcname="flash_params_read" call-argnr="1" file="modules/params/flash_params.c" line="164" col="29" call-argexpr="&amp;current_params" call-argvaluetype="7" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="modules/params/flash_params.h:37:19" my-argnr="1" my-argname="params" file="modules/params/flash_params.c" line="137" col="5" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:167:6" my-argnr="1" my-argname="url" file="modules/params/flash_params.c" line="169" col="39" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:173:6" my-argnr="1" my-argname="port" file="modules/params/flash_params.c" line="175" col="40" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:179:6" my-argnr="1" my-argname="id" file="modules/params/flash_params.c" line="181" col="38" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:185:6" my-argnr="1" my-argname="pw" file="modules/params/flash_params.c" line="187" col="38" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:191:6" my-argnr="1" my-argname="mountpoint" file="modules/params/flash_params.c" line="193" col="46" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:225:6" my-argnr="1" my-argname="name" file="modules/params/flash_params.c" line="227" col="45" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="modules/params/flash_params.c:167:6" my-argnr="1" my-argname="url" file="modules/params/flash_params.c" line="169" col="39" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:173:6" my-argnr="1" my-argname="port" file="modules/params/flash_params.c" line="175" col="40" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:179:6" my-argnr="1" my-argname="id" file="modules/params/flash_params.c" line="181" col="38" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:185:6" my-argnr="1" my-argname="pw" file="modules/params/flash_params.c" line="187" col="38" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:191:6" my-argnr="1" my-argname="mountpoint" file="modules/params/flash_params.c" line="193" col="46" value="0"/>
+    <unsafe-usage my-id="modules/params/flash_params.c:225:6" my-argnr="1" my-argname="name" file="modules/params/flash_params.c" line="227" col="45" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_erase" lineNumber="34" column="19"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_read" lineNumber="69" column="19"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_write" lineNumber="96" column="19"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_get_current" lineNumber="130" column="16"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_save" lineNumber="135" column="19"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_init" lineNumber="162" column="19"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ntrip_url" lineNumber="167" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ntrip_port" lineNumber="173" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ntrip_id" lineNumber="179" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ntrip_pw" lineNumber="185" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ntrip_mountpoint" lineNumber="191" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_manual_position" lineNumber="197" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_baseline_len" lineNumber="220" column="6"/>
+    <functiondecl file="modules/params/flash_params.c" functionName="flash_params_set_ble_device_name" lineNumber="225" column="6"/>
+    <functioncall functionName="FLASH_SECTOR_11"/>
+    <functioncall functionName="FLASH_TYPEERASE_SECTORS"/>
+    <functioncall functionName="FLASH_TYPEPROGRAM_WORD"/>
+    <functioncall functionName="FLASH_VOLTAGE_RANGE_3"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_FLASHEx_Erase"/>
+    <functioncall functionName="HAL_FLASH_GetError"/>
+    <functioncall functionName="HAL_FLASH_Lock"/>
+    <functioncall functionName="HAL_FLASH_Program"/>
+    <functioncall functionName="HAL_FLASH_Unlock"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="__HAL_FLASH_DATA_CACHE_DISABLE"/>
+    <functioncall functionName="__HAL_FLASH_DATA_CACHE_ENABLE"/>
+    <functioncall functionName="__HAL_FLASH_DATA_CACHE_RESET"/>
+    <functioncall functionName="__HAL_FLASH_INSTRUCTION_CACHE_DISABLE"/>
+    <functioncall functionName="__HAL_FLASH_INSTRUCTION_CACHE_ENABLE"/>
+    <functioncall functionName="__HAL_FLASH_INSTRUCTION_CACHE_RESET"/>
+    <functioncall functionName="flash_params_erase"/>
+    <functioncall functionName="flash_params_read"/>
+    <functioncall functionName="flash_params_write"/>
+    <functioncall functionName="memcmp"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="strncpy"/>
+  </FileInfo>
+</analyzerinfo>

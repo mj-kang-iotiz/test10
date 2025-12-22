@@ -1,0 +1,8 @@
+gps_send_timer_callback global:[gps_send_buf] call:[gps_format_position_data,rs485_send,strlen] noreturn:[rs485_send]
+rs485_cmd_parse_process call:[LOG_INFO,rs485_at_cmd_handler,sizeof]
+rs485_tx_task call:[LOG_DEBUG,LOG_ERR,LOG_INFO,rx_enable,send,tx_enable,vTaskDelete,xQueueReceive,xSemaphoreGive,xSemaphoreTake] noreturn:[LOG_DEBUG,LOG_ERR,rx_enable,tx_enable,vTaskDelete,xSemaphoreGive]
+rs485_rx_task call:[LOG_DEBUG_RAW,LOG_INFO,pdMS_TO_TICKS,rs485_cmd_parse_process,rs485_port_get_recv_buf,rs485_port_get_rx_pos,rs485_send,strlen,vTaskDelay,vTaskDelete,xQueueReceive,xSemaphoreGive,xSemaphoreTake] noreturn:[rs485_cmd_parse_process,vTaskDelete,xSemaphoreGive]
+rs485_init_all global:[gps_send_timer,rs485_instance] call:[LOG_ERR,LOG_INFO,board_get_config,pdMS_TO_TICKS,rs485_port_init_instance,rs485_port_set_queue,rs485_port_start,sizeof,xQueueCreate,xSemaphoreCreateMutex,xTaskCreate,xTimerCreate] noreturn:[LOG_ERR,LOG_INFO]
+rs485_get_handle global:[rs485_instance]
+rs485_send global:[rs485_instance] call:[LOG_ERR,memcpy,pdMS_TO_TICKS,xQueueSend]
+rs485_get_instance global:[rs485_instance]

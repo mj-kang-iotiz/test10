@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17425003419774409392">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_config.h&quot; not found." verbose="Include file: &quot;gps_config.h&quot; not found.">
+            <location file="lib/gps/gps_types.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_types.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/gps/gps.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_nmea.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_nmea.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_unicore.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_unicore.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/rtcm.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/rtcm.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="lib/gps/gps.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;parser.h&quot; not found." verbose="Include file: &quot;parser.h&quot; not found.">
+            <location file="lib/gps/gps_parse.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_parse.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.c" line="4" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="lib/gps/gps_ubx.c">
+            <location file="lib/gps/gps_ubx.c" line="0" column="0"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;data&apos; can be declared as pointer to const" verbose="Variable &apos;data&apos; can be declared as pointer to const" cwe="398" file0="lib/gps/gps_ubx.c">
+            <location file="lib/gps/gps_ubx.c" line="58" column="9" info="Variable &apos;data&apos; can be declared as pointer to const"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;payload_start&apos; is assigned a value that is never used." verbose="Variable &apos;payload_start&apos; is assigned a value that is never used." cwe="563" file0="lib/gps/gps_ubx.c">
+            <location file="lib/gps/gps_ubx.c" line="1101" column="24"/>
+            <symbol>payload_start</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;payload_start&apos; is assigned a value that is never used." verbose="Variable &apos;payload_start&apos; is assigned a value that is never used." cwe="563" file0="lib/gps/gps_ubx.c">
+            <location file="lib/gps/gps_ubx.c" line="1101" column="10"/>
+            <symbol>payload_start</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="3" file="lib/gps/gps_ubx.c" line="409" col="20" call-argexpr="&amp;ck_a" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="4" file="lib/gps/gps_ubx.c" line="409" col="20" call-argexpr="&amp;ck_b" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.c:14:15" call-funcname="ubx_build_valset_msg" call-argnr="1" file="lib/gps/gps_ubx.c" line="455" col="40" call-argexpr="msg" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="3" file="lib/gps/gps_ubx.c" line="679" col="20" call-argexpr="&amp;ck_a" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="4" file="lib/gps/gps_ubx.c" line="679" col="20" call-argexpr="&amp;ck_b" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="3" file="lib/gps/gps_ubx.c" line="1153" col="20" call-argexpr="&amp;ck_a" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.h:264:6" call-funcname="ubx_calc_checksum" call-argnr="4" file="lib/gps/gps_ubx.c" line="1153" col="20" call-argexpr="&amp;ck_b" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="lib/gps/gps_ubx.c:9:20" call-funcname="calc_ubx_chksum" call-argnr="1" file="lib/gps/gps_ubx.c" line="40" col="3" my-id="lib/gps/gps_ubx.c:10:23" my-argnr="1"/>
+<function-call call-id="lib/gps/gps_ubx.c:14:15" call-funcname="ubx_build_valset_msg" call-argnr="3" file="lib/gps/gps_ubx.c" line="455" col="20" my-id="lib/gps/gps_ubx.h:249:6" my-argnr="3"/>
+<function-call call-id="lib/gps/gps_ubx.h:249:6" call-funcname="ubx_send_valset" call-argnr="1" file="lib/gps/gps_ubx.c" line="509" col="8" my-id="lib/gps/gps_ubx.h:252:6" my-argnr="1"/>
+<function-call call-id="lib/gps/gps_ubx.h:249:6" call-funcname="ubx_send_valset" call-argnr="3" file="lib/gps/gps_ubx.c" line="509" col="8" my-id="lib/gps/gps_ubx.h:252:6" my-argnr="3"/>
+<function-call call-id="lib/gps/gps_ubx.h:249:6" call-funcname="ubx_send_valset" call-argnr="1" file="lib/gps/gps_ubx.c" line="551" col="8" my-id="lib/gps/gps_ubx.c:544:6" my-argnr="1"/>
+<function-call call-id="lib/gps/gps_ubx.h:249:6" call-funcname="ubx_send_valset" call-argnr="3" file="lib/gps/gps_ubx.c" line="551" col="8" my-id="lib/gps/gps_ubx.c:544:6" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <array-index>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:14:15" my-argnr="1" my-argname="buf" file="lib/gps/gps_ubx.c" line="342" col="3" value="0"/>
+    </array-index>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:9:20" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="22" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:12:13" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="81" col="11" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:244:9" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="104" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:264:6" my-argnr="3" my-argname="ck_a" file="lib/gps/gps_ubx.c" line="196" col="4" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:264:6" my-argnr="4" my-argname="ck_b" file="lib/gps/gps_ubx.c" line="198" col="4" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:219:6" my-argnr="1" my-argname="handler" file="lib/gps/gps_ubx.c" line="222" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:248:17" my-argnr="1" my-argname="handler" file="lib/gps/gps_ubx.c" line="252" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:14:15" my-argnr="1" my-argname="buf" file="lib/gps/gps_ubx.c" line="342" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:17:13" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="717" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:742:6" my-argnr="1" my-argname="ctx" file="lib/gps/gps_ubx.c" line="745" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:283:18" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="1024" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:12:13" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="81" col="11" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:244:9" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="104" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:248:17" my-argnr="1" my-argname="handler" file="lib/gps/gps_ubx.c" line="252" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.c:17:13" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="717" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps_ubx.h:283:18" my-argnr="1" my-argname="gps" file="lib/gps/gps_ubx.c" line="1024" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="calc_ubx_chksum" lineNumber="20" column="20"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="check_ubx_chksum" lineNumber="38" column="23"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="store_ubx_nav_data" lineNumber="56" column="13"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="store_ubx_data" lineNumber="79" column="13"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="gps_parse_ubx" lineNumber="102" column="9"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="get_tick_ms" lineNumber="169" column="17"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_calc_checksum" lineNumber="191" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_cmd_handler_init" lineNumber="219" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_get_cmd_state" lineNumber="249" column="17"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="handle_ubx_ack" lineNumber="283" column="13"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_build_valset_msg" lineNumber="333" column="15"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_send_valset" lineNumber="436" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_send_valset_cb" lineNumber="502" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_send_valset_sync" lineNumber="544" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_send_valget" lineNumber="604" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="store_ubx_ack_data" lineNumber="712" column="13"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_context_init" lineNumber="742" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_async_callback" lineNumber="776" column="13"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_async_start" lineNumber="856" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_async_process" lineNumber="928" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_async_get_state" lineNumber="1022" column="18"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_init_async_cancel" lineNumber="1037" column="6"/>
+    <functiondecl file="lib/gps/gps_ubx.c" functionName="ubx_send_cfg_cfg" lineNumber="1048" column="6"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="calc_ubx_chksum"/>
+    <functioncall functionName="check_ubx_chksum"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="get_tick_ms"/>
+    <functioncall functionName="gps_unicore_bin_header_t"/>
+    <functioncall functionName="handle_ubx_ack"/>
+    <functioncall functionName="hpd_unicore_bestnavb_t"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="store_ubx_ack_data"/>
+    <functioncall functionName="store_ubx_data"/>
+    <functioncall functionName="store_ubx_nav_data"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ubx_build_valset_msg"/>
+    <functioncall functionName="ubx_calc_checksum"/>
+    <functioncall functionName="ubx_get_cmd_state"/>
+    <functioncall functionName="ubx_init_async_callback"/>
+    <functioncall functionName="ubx_send_valset"/>
+    <functioncall functionName="ubx_send_valset_cb"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="xTaskGetTickCount"/>
+  </FileInfo>
+</analyzerinfo>

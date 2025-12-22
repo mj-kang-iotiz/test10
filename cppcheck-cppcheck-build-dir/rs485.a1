@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1922713866614722806">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/rs485/rs485.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/rs485/rs485.c" line="7" column="0"/>
+        </error>
+</analyzerinfo>

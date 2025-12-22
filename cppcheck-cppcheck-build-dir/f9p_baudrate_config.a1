@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7154326380992816435">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/f9p_baudrate_config.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found.">
+            <location file="modules/gps/f9p_baudrate_config.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found.">
+            <location file="modules/gps/f9p_baudrate_config.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="modules/gps/f9p_baudrate_config.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gps/f9p_baudrate_config.c" line="10" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/gps/f9p_baudrate_config.c">
+            <location file="modules/gps/f9p_baudrate_config.c" line="0" column="0"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;poll_payload&apos; can be declared as const array" verbose="Variable &apos;poll_payload&apos; can be declared as const array" cwe="398" file0="modules/gps/f9p_baudrate_config.c">
+            <location file="modules/gps/f9p_baudrate_config.c" line="307" column="13" info="Variable &apos;poll_payload&apos; can be declared as const array"/>
+            <symbol>poll_payload</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="281" col="16" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="4" file="modules/gps/f9p_baudrate_config.c" line="281" col="16" call-argexpr="cfg_prt" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:93:12" call-funcname="wait_for_ack_ll" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="287" col="33" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="309" col="16" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="4" file="modules/gps/f9p_baudrate_config.c" line="309" col="16" call-argexpr="poll_payload" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:301:13" call-funcname="f9p_poll_uart_config" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="485" col="29" call-argexpr="&amp;current_baud" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:301:13" call-funcname="f9p_poll_uart_config" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="529" col="29" call-argexpr="&amp;current_baud" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:301:13" call-funcname="f9p_poll_uart_config" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="585" col="29" call-argexpr="&amp;current_baud" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:301:13" call-funcname="f9p_poll_uart_config" call-argnr="3" file="modules/gps/f9p_baudrate_config.c" line="629" col="29" call-argexpr="&amp;current_baud" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="1" file="modules/gps/f9p_baudrate_config.c" line="281" col="5" my-id="modules/gps/f9p_baudrate_config.c:219:13" my-argnr="1"/>
+<function-call call-id="modules/gps/f9p_baudrate_config.c:25:13" call-funcname="ubx_send_ll" call-argnr="1" file="modules/gps/f9p_baudrate_config.c" line="309" col="5" my-id="modules/gps/f9p_baudrate_config.c:301:13" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="ubx_send_ll" lineNumber="25" column="13"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="wait_for_ack_ll" lineNumber="93" column="12"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="f9p_set_uart_baudrate" lineNumber="219" column="13"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="f9p_poll_uart_config" lineNumber="301" column="13"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="change_stm32_baudrate_ll" lineNumber="435" column="13"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="f9p_init_uart1_baudrate_115200" lineNumber="469" column="6"/>
+    <functiondecl file="modules/gps/f9p_baudrate_config.c" functionName="f9p_init_rover_uart1_baudrate_115200" lineNumber="569" column="6"/>
+    <functioncall functionName="HAL_Delay"/>
+    <functioncall functionName="HAL_GetTick"/>
+    <functioncall functionName="HAL_RCC_GetPCLK1Freq"/>
+    <functioncall functionName="LL_USART_Disable"/>
+    <functioncall functionName="LL_USART_Enable"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_RXNE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TC"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TXE"/>
+    <functioncall functionName="LL_USART_OVERSAMPLING_16"/>
+    <functioncall functionName="LL_USART_ReceiveData8"/>
+    <functioncall functionName="LL_USART_SetBaudRate"/>
+    <functioncall functionName="LL_USART_TransmitData8"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="UART4"/>
+    <functioncall functionName="USART2"/>
+    <functioncall functionName="change_stm32_baudrate_ll"/>
+    <functioncall functionName="f9p_poll_uart_config"/>
+    <functioncall functionName="f9p_set_uart_baudrate"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ubx_send_ll"/>
+    <functioncall functionName="wait_for_ack_ll"/>
+  </FileInfo>
+</analyzerinfo>

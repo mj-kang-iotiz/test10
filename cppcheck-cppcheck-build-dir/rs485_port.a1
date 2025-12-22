@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16885092496075252626">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_port.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485.h&quot; not found." verbose="Include file: &quot;rs485.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.c" line="16" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="delay_us" lineNumber="27" column="20"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_uart5_dma_init" lineNumber="33" column="13"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_uart5_init" lineNumber="46" column="13"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_uart5_comm_start" lineNumber="124" column="5"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_uart5_hw_init" lineNumber="145" column="5"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_uart5_send" lineNumber="153" column="5"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_tx_enable" lineNumber="166" column="6"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_rx_enable" lineNumber="174" column="6"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_init_instance" lineNumber="259" column="5"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_start" lineNumber="283" column="6"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_stop" lineNumber="292" column="6"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_get_rx_pos" lineNumber="301" column="10"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_get_recv_buf" lineNumber="306" column="7"/>
+    <functiondecl file="modules/rs485/rs485_port.c" functionName="rs485_port_set_queue" lineNumber="311" column="6"/>
+    <functioncall functionName="CYCCNT"/>
+    <functioncall functionName="DMA1"/>
+    <functioncall functionName="DMA1_Stream0_IRQn"/>
+    <functioncall functionName="DR"/>
+    <functioncall functionName="GPIOC"/>
+    <functioncall functionName="GPIOD"/>
+    <functioncall functionName="GPIO_PIN_10"/>
+    <functioncall functionName="GPIO_PIN_11"/>
+    <functioncall functionName="GPIO_PIN_RESET"/>
+    <functioncall functionName="GPIO_PIN_SET"/>
+    <functioncall functionName="HAL_GPIO_WritePin"/>
+    <functioncall functionName="LL_AHB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_DMA1"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_GPIOC"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_GPIOD"/>
+    <functioncall functionName="LL_APB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_APB1_GRP1_PERIPH_UART5"/>
+    <functioncall functionName="LL_DMA_CHANNEL_4"/>
+    <functioncall functionName="LL_DMA_DIRECTION_PERIPH_TO_MEMORY"/>
+    <functioncall functionName="LL_DMA_DisableFifoMode"/>
+    <functioncall functionName="LL_DMA_EnableIT_DME"/>
+    <functioncall functionName="LL_DMA_EnableIT_FE"/>
+    <functioncall functionName="LL_DMA_EnableIT_TE"/>
+    <functioncall functionName="LL_DMA_EnableStream"/>
+    <functioncall functionName="LL_DMA_GetDataLength"/>
+    <functioncall functionName="LL_DMA_MDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_MEMORY_INCREMENT"/>
+    <functioncall functionName="LL_DMA_MODE_CIRCULAR"/>
+    <functioncall functionName="LL_DMA_PDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_PERIPH_NOINCREMENT"/>
+    <functioncall functionName="LL_DMA_PRIORITY_LOW"/>
+    <functioncall functionName="LL_DMA_STREAM_0"/>
+    <functioncall functionName="LL_DMA_SetChannelSelection"/>
+    <functioncall functionName="LL_DMA_SetDataLength"/>
+    <functioncall functionName="LL_DMA_SetDataTransferDirection"/>
+    <functioncall functionName="LL_DMA_SetMemoryAddress"/>
+    <functioncall functionName="LL_DMA_SetMemoryIncMode"/>
+    <functioncall functionName="LL_DMA_SetMemorySize"/>
+    <functioncall functionName="LL_DMA_SetMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphAddress"/>
+    <functioncall functionName="LL_DMA_SetPeriphIncMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphSize"/>
+    <functioncall functionName="LL_DMA_SetStreamPriorityLevel"/>
+    <functioncall functionName="LL_GPIO_AF_8"/>
+    <functioncall functionName="LL_GPIO_Init"/>
+    <functioncall functionName="LL_GPIO_MODE_ALTERNATE"/>
+    <functioncall functionName="LL_GPIO_OUTPUT_PUSHPULL"/>
+    <functioncall functionName="LL_GPIO_PIN_12"/>
+    <functioncall functionName="LL_GPIO_PIN_2"/>
+    <functioncall functionName="LL_GPIO_PULL_NO"/>
+    <functioncall functionName="LL_GPIO_SPEED_FREQ_VERY_HIGH"/>
+    <functioncall functionName="LL_USART_ConfigAsyncMode"/>
+    <functioncall functionName="LL_USART_DATAWIDTH_8B"/>
+    <functioncall functionName="LL_USART_DIRECTION_TX_RX"/>
+    <functioncall functionName="LL_USART_Enable"/>
+    <functioncall functionName="LL_USART_EnableDMAReq_RX"/>
+    <functioncall functionName="LL_USART_EnableIT_ERROR"/>
+    <functioncall functionName="LL_USART_EnableIT_IDLE"/>
+    <functioncall functionName="LL_USART_EnableIT_PE"/>
+    <functioncall functionName="LL_USART_HWCONTROL_NONE"/>
+    <functioncall functionName="LL_USART_Init"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TC"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TXE"/>
+    <functioncall functionName="LL_USART_OVERSAMPLING_16"/>
+    <functioncall functionName="LL_USART_PARITY_NONE"/>
+    <functioncall functionName="LL_USART_STOPBITS_1"/>
+    <functioncall functionName="LL_USART_TransmitData8"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="NVIC_EnableIRQ"/>
+    <functioncall functionName="NVIC_EncodePriority"/>
+    <functioncall functionName="NVIC_GetPriorityGrouping"/>
+    <functioncall functionName="NVIC_SetPriority"/>
+    <functioncall functionName="UART5"/>
+    <functioncall functionName="UART5_IRQn"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="delay_us"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="rs485_rx_enable"/>
+    <functioncall functionName="rs485_tx_enable"/>
+    <functioncall functionName="rs485_uart5_comm_start"/>
+    <functioncall functionName="rs485_uart5_dma_init"/>
+    <functioncall functionName="rs485_uart5_hw_init"/>
+    <functioncall functionName="rs485_uart5_init"/>
+    <functioncall functionName="rs485_uart5_send"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="stop"/>
+  </FileInfo>
+</analyzerinfo>

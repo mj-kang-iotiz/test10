@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15736223952457457933">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.c" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/gsm_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;led.h&quot; not found." verbose="Include file: &quot;led.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/ntrip_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/ntrip_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.c" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/gsm_app.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gsm/gsm_app.c" line="13" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pos&apos; can be reduced." verbose="The scope of the variable &apos;pos&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/gsm_app.c">
+            <location file="modules/gsm/gsm_app.c" line="155" column="10"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pos&apos; is assigned a value that is never used." verbose="Variable &apos;pos&apos; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c">
+            <location file="modules/gsm/gsm_app.c" line="155" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c">
+            <location file="modules/gsm/gsm_app.c" line="158" column="25"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c">
+            <location file="modules/gsm/gsm_app.c" line="191" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/gsm/gsm_app.h:10:6" call-funcname="gsm_task_create" call-argnr="1" file="modules/gsm/gsm_app.c" line="49" col="20" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gsm/gsm_port.h:27:6" call-funcname="gsm_port_set_airplane_mode" call-argnr="1" file="modules/gsm/gsm_app.c" line="53" col="31" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_task_create" lineNumber="35" column="6"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_start_rover" lineNumber="42" column="6"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_evt_handler" lineNumber="66" column="13"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_process_task" lineNumber="154" column="13"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_at_cmd_process_task" lineNumber="220" column="13"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="socket_state_to_str" lineNumber="350" column="20"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="socket_state_check_callback" lineNumber="376" column="13"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="socket_state_timer_callback" lineNumber="448" column="13"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_socket_monitor_start" lineNumber="461" column="6"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_socket_monitor_stop" lineNumber="493" column="6"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_socket_update_recv_time" lineNumber="505" column="6"/>
+    <functiondecl file="modules/gsm/gsm_app.c" functionName="gsm_at_power_off" lineNumber="514" column="6"/>
+    <functioncall functionName="GSM_TCP_MAX_SOCKETS"/>
+    <functioncall functionName="LED_COLOR_GREEN"/>
+    <functioncall functionName="LED_COLOR_RED"/>
+    <functioncall functionName="LED_COLOR_YELLOW"/>
+    <functioncall functionName="LED_ID_1"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="at_str"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="gsm_at_cmd_process_task"/>
+    <functioncall functionName="gsm_evt_handler"/>
+    <functioncall functionName="gsm_get_rx_pos"/>
+    <functioncall functionName="gsm_init"/>
+    <functioncall functionName="gsm_parse_process"/>
+    <functioncall functionName="gsm_port_get_airplane_mode"/>
+    <functioncall functionName="gsm_port_init"/>
+    <functioncall functionName="gsm_port_set_airplane_mode"/>
+    <functioncall functionName="gsm_process_task"/>
+    <functioncall functionName="gsm_send_at_qistate"/>
+    <functioncall functionName="gsm_send_at_qpowd"/>
+    <functioncall functionName="gsm_start"/>
+    <functioncall functionName="gsm_task_create"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="led_set_state"/>
+    <functioncall functionName="led_set_toggle"/>
+    <functioncall functionName="lte_get_init_state"/>
+    <functioncall functionName="lte_get_retry_count"/>
+    <functioncall functionName="lte_init_start"/>
+    <functioncall functionName="lte_network_check_timer_callback"/>
+    <functioncall functionName="lte_reinit_from_apn"/>
+    <functioncall functionName="lte_set_gsm_handle"/>
+    <functioncall functionName="lte_set_network_check_timer"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="ntrip_task_create"/>
+    <functioncall functionName="pdFALSE"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="pdTRUE"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="socket_state_check_callback"/>
+    <functioncall functionName="socket_state_timer_callback"/>
+    <functioncall functionName="socket_state_to_str"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="tcp_pbuf_free"/>
+    <functioncall functionName="timeout_ms"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+    <functioncall functionName="xTaskGetTickCount"/>
+    <functioncall functionName="xTimerCreate"/>
+    <functioncall functionName="xTimerStart"/>
+    <functioncall functionName="xTimerStop"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.18.0"/>
+    <errors>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_gps_gga_raw_add&amp;#039; is never used." verbose="The function &amp;#039;_gps_gga_raw_add&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gps\gps.c" line="17"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;talker&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;talker&amp;#039; is assigned a value that is never used." cwe="563" file0="lib/gps/gps_nmea.c" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_nmea.c" line="121"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;data&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;data&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gps/gps_ubx.c" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_ubx.c" line="58"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;payload_start&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;payload_start&amp;#039; is assigned a value that is never used." cwe="563" file0="lib/gps/gps_ubx.c" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_ubx.c" line="1101"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_init_async_cancel&amp;#039; is never used." verbose="The function &amp;#039;ubx_init_async_cancel&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_ubx.c" line="1037"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_send_valget&amp;#039; is never used." verbose="The function &amp;#039;ubx_send_valget&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_ubx.c" line="604"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;buf&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;buf&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gps/gps_unicore.c" sinceDate="2025-12-19">
+            <location file="lib\gps\gps_unicore.c" line="211"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;rtcm_tx_task_init&amp;#039; is never used." verbose="The function &amp;#039;rtcm_tx_task_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gps\rtcm.c" line="60"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;tcp_available&amp;#039; is never used." verbose="The function &amp;#039;tcp_available&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gsm\tcp_socket.c" line="210"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;tcp_set_recv_timeout&amp;#039; is never used." verbose="The function &amp;#039;tcp_set_recv_timeout&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gsm\tcp_socket.c" line="105"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." cwe="686" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1381"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." cwe="686" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1436"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="159" info="target is overwritten"/>
+            <location file="lib\gsm\gsm.c" line="150" info="target is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="206" info="target is overwritten"/>
+            <location file="lib\gsm\gsm.c" line="197" info="target is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="260" info="target is overwritten"/>
+            <location file="lib\gsm\gsm.c" line="251" info="target is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="291" info="target is overwritten"/>
+            <location file="lib\gsm\gsm.c" line="280" info="target is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;target&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="325" info="target is overwritten"/>
+            <location file="lib\gsm\gsm.c" line="315" info="target is assigned"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;params&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;params&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="760"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;params&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;params&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1484"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;handle_urc_cmee&amp;#039; is a callback function, if &amp;#039;gsm&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;handle_urc_cmee&amp;#039; is a callback function, if &amp;#039;gsm&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="39" info="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const"/>
+            <location file="lib\gsm\gsm.c" line="438" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;handle_urc_qcfg&amp;#039; is a callback function, if &amp;#039;gsm&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;handle_urc_qcfg&amp;#039; is a callback function, if &amp;#039;gsm&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="418" info="Parameter &amp;#039;gsm&amp;#039; can be declared as pointer to const"/>
+            <location file="lib\gsm\gsm.c" line="448" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;line&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;line&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="552"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;ctx&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;ctx&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="771"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;socket&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;socket&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1359"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;socket&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;socket&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1421"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_tcp_get_socket&amp;#039; is never used." verbose="The function &amp;#039;gsm_tcp_get_socket&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\gsm\gsm.c" line="1081"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;led_init&amp;#039; is never used." verbose="The function &amp;#039;led_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\led\led.c" line="101"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;handle&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;handle&amp;#039; can be declared as pointer to const" cwe="398" file0="lib/lora/lora.c" sinceDate="2025-12-19">
+            <location file="lib\lora\lora.c" line="9"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;parse_hex&amp;#039; is never used." verbose="The function &amp;#039;parse_hex&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="lib\parser\parser.c" line="54"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="563"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pos&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pos&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="160"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;total_received&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;total_received&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="163"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="119"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;params&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;params&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="119"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="160"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="163"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="181"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="196"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_disconnect_async&amp;#039; is never used." verbose="The function &amp;#039;ble_disconnect_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="832"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_get_connection_state&amp;#039; is never used." verbose="The function &amp;#039;ble_get_connection_state&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="592"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_get_current_mode&amp;#039; is never used." verbose="The function &amp;#039;ble_get_current_mode&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="629"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_get_instance&amp;#039; is never used." verbose="The function &amp;#039;ble_get_instance&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="318"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_init_all&amp;#039; is never used." verbose="The function &amp;#039;ble_init_all&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="230"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_advon_async&amp;#039; is never used." verbose="The function &amp;#039;ble_set_advon_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="526"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_bypass_rx_callback&amp;#039; is never used." verbose="The function &amp;#039;ble_set_bypass_rx_callback&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="644"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_connection_state&amp;#039; is never used." verbose="The function &amp;#039;ble_set_connection_state&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="607"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_device_name_async&amp;#039; is never used." verbose="The function &amp;#039;ble_set_device_name_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="488"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_manuf_async&amp;#039; is never used." verbose="The function &amp;#039;ble_set_manuf_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="808"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_set_uart_baudrate_async&amp;#039; is never used." verbose="The function &amp;#039;ble_set_uart_baudrate_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_app.c" line="559"/>
+        </error>
+        <error id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: inst-&amp;gt;parser.data" verbose="Buffer is accessed out of bounds: inst-&amp;gt;parser.data" cwe="788" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="143"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int *&amp;#039; but the argument type is &amp;#039;unsigned int *&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int *&amp;#039; but the argument type is &amp;#039;unsigned int *&amp;#039;." cwe="686" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="354"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="245"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.&#10;&#10;Sample program that can crash:&#10;&#10;#include &amp;lt;stdio.h&amp;gt;&#10;int main()&#10;{&#10;    char c[5];&#10;    scanf(&amp;quot;%s&amp;quot;, c);&#10;    return 0;&#10;}&#10;&#10;Typing in 5 or more characters may make the program crash. The correct usage here is &amp;#039;scanf(&amp;quot;%4s&amp;quot;, c);&amp;#039;, as the maximum field width does not include the terminating null byte.&#10;Source: http://linux.die.net/man/3/scanf&#10;Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="354"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;buf&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;buf&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="346"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_ok_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_ok_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="45" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="78" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_err_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_err_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="50" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="79" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_rdy_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_rdy_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="55" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="80" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_advertising_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_advertising_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="60" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="81" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_connected_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_connected_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="65" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="82" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_disconnected_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;bot_disconnected_handler&amp;#039; is a callback function, if &amp;#039;inst&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="70" info="Parameter &amp;#039;inst&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\ble\ble_cmd.c" line="83" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="279"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="303"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="317"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="332"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="348"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="404"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="412"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="420"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="428"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;lat&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;lat&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="359"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;lon&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;lon&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="366"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;alt&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;alt&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_cmd.c" line="373"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="395"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;buffer_len&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;buffer_len&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="204" info="buffer_len is overwritten"/>
+            <location file="modules\ble\ble_port.c" line="202" info="buffer_len is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;buffer_len&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;buffer_len&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="219" info="buffer_len is overwritten"/>
+            <location file="modules\ble\ble_port.c" line="204" info="buffer_len is assigned"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &amp;#039;name_len&amp;#039;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &amp;#039;name_len&amp;#039;. The initialized value is overwritten before it is read." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="252" info="name_len is overwritten"/>
+            <location file="modules\ble\ble_port.c" line="246" info="name_len is initialized"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="262"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;buffer_len&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;buffer_len&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="219"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;buffer_len&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;buffer_len&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="235"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;name_len&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;name_len&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="268"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_port_stop&amp;#039; is never used." verbose="The function &amp;#039;ble_port_stop&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="581"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ble_send_at_command_sync&amp;#039; is never used." verbose="The function &amp;#039;ble_send_at_command_sync&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\ble\ble_port.c" line="358"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;!switch_to_base_fixed_mode()&amp;#039; is always false" verbose="Condition &amp;#039;!switch_to_base_fixed_mode()&amp;#039; is always false" cwe="570" file0="modules/gps/base_auto_fix.c" sinceDate="2025-12-19">
+            <location file="modules\gps\base_auto_fix.c" line="731" info="Condition &amp;#039;!switch_to_base_fixed_mode()&amp;#039; is always false"/>
+            <location file="modules\gps\base_auto_fix.c" line="731" info="Calling function &amp;#039;switch_to_base_fixed_mode&amp;#039; returns 1"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;base_auto_fix_get_average_coord&amp;#039; is never used." verbose="The function &amp;#039;base_auto_fix_get_average_coord&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\base_auto_fix.c" line="282"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;base_auto_fix_get_state&amp;#039; is never used." verbose="The function &amp;#039;base_auto_fix_get_state&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\base_auto_fix.c" line="184"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;base_auto_fix_stop&amp;#039; is never used." verbose="The function &amp;#039;base_auto_fix_stop&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\base_auto_fix.c" line="155"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;poll_payload&amp;#039; can be declared as const array" verbose="Variable &amp;#039;poll_payload&amp;#039; can be declared as const array" cwe="398" file0="modules/gps/f9p_baudrate_config.c" sinceDate="2025-12-19">
+            <location file="modules\gps\f9p_baudrate_config.c" line="307"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;data&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;data&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="136"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="322"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="345"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;bestnav&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;bestnav&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="616"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="722"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;base_station_cb&amp;#039; is a callback function, if &amp;#039;user_data&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;base_station_cb&amp;#039; is a callback function, if &amp;#039;user_data&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="730" info="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\gps\gps_app.c" line="802" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="798"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="979"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;ns_str&amp;#039; can be declared as const array" verbose="Variable &amp;#039;ns_str&amp;#039; can be declared as const array" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1220"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;ew_str&amp;#039; can be declared as const array" verbose="Variable &amp;#039;ew_str&amp;#039; can be declared as const array" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1221"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;inst&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;inst&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1372"/>
+        </error>
+        <error id="moduloofone" severity="style" msg="Modulo of one is always equal to zero" verbose="Modulo of one is always equal to zero" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="100"/>
+        </error>
+        <error id="moduloofone" severity="style" msg="Modulo of one is always equal to zero" verbose="Modulo of one is always equal to zero" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="153"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: lat" verbose="Uninitialized variable: lat" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1261"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: lon" verbose="Uninitialized variable: lon" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1261"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: msl_alt" verbose="Uninitialized variable: msl_alt" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1262"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: ellipsoid_alt" verbose="Uninitialized variable: ellipsoid_alt" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1263"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: heading" verbose="Uninitialized variable: heading" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1264"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: fix" verbose="Uninitialized variable: fix" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1265"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: sat_num" verbose="Uninitialized variable: sat_num" cwe="457" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1266"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="749"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="752"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="867"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="874"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ns&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ns&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1231"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ew&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ew&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1232"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ns&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ns&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1241"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ew&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ew&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1242"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;written&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;written&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1259"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_add_gga_avg_data&amp;#039; is never used." verbose="The function &amp;#039;_add_gga_avg_data&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="91"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_add_hp_avg_data&amp;#039; is never used." verbose="The function &amp;#039;_add_hp_avg_data&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="133"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;callback_function&amp;#039; is never used." verbose="The function &amp;#039;callback_function&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="722"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_configure_um982_base_mode_async&amp;#039; is never used." verbose="The function &amp;#039;gps_configure_um982_base_mode_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="321"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_factory_reset_async&amp;#039; is never used." verbose="The function &amp;#039;gps_factory_reset_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1171"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_get_gga_avg&amp;#039; is never used." verbose="The function &amp;#039;gps_get_gga_avg&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1026"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_gga_avg_can_read&amp;#039; is never used." verbose="The function &amp;#039;gps_gga_avg_can_read&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1015"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_init_um982_base_async&amp;#039; is never used." verbose="The function &amp;#039;gps_init_um982_base_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="448"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_init_um982_base_surveyin_async_internal&amp;#039; is never used." verbose="The function &amp;#039;gps_init_um982_base_surveyin_async_internal&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="298"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_init_um982_rover_async&amp;#039; is never used." verbose="The function &amp;#039;gps_init_um982_rover_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="486"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_send_command_sync&amp;#039; is never used." verbose="The function &amp;#039;gps_send_command_sync&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_app.c" line="1045"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DMA1_Stream2_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;DMA1_Stream2_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_port.c" line="525"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DMA1_Stream5_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;DMA1_Stream5_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_port.c" line="276"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;UART4_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;UART4_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_port.c" line="532"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;USART2_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;USART2_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_port.c" line="237"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gps_port_stop&amp;#039; is never used." verbose="The function &amp;#039;gps_port_stop&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\gps_port.c" line="585"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;on_init_complete&amp;#039; is a callback function, if &amp;#039;user_data&amp;#039; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const. However it seems that &amp;#039;on_init_complete&amp;#039; is a callback function, if &amp;#039;user_data&amp;#039; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/gps/ubx_init.c" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="351" info="Parameter &amp;#039;user_data&amp;#039; can be declared as pointer to const"/>
+            <location file="modules\gps\ubx_init.c" line="381" info="You might need to cast the function pointer here"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_base_init&amp;#039; is never used." verbose="The function &amp;#039;ubx_base_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="370"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_disable_time_mode&amp;#039; is never used." verbose="The function &amp;#039;ubx_disable_time_mode&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="447"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_moving_base_init&amp;#039; is never used." verbose="The function &amp;#039;ubx_moving_base_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="377"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_rover_init&amp;#039; is never used." verbose="The function &amp;#039;ubx_rover_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="363"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;ubx_set_survey_in_mode_async&amp;#039; is never used." verbose="The function &amp;#039;ubx_set_survey_in_mode_async&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gps\ubx_init.c" line="641"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pos&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pos&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/gsm_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="155"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="155"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="158"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/gsm/gsm_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="191"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_at_power_off&amp;#039; is never used." verbose="The function &amp;#039;gsm_at_power_off&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="514"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_socket_monitor_start&amp;#039; is never used." verbose="The function &amp;#039;gsm_socket_monitor_start&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="461"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_socket_monitor_stop&amp;#039; is never used." verbose="The function &amp;#039;gsm_socket_monitor_stop&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="493"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_socket_update_recv_time&amp;#039; is never used." verbose="The function &amp;#039;gsm_socket_update_recv_time&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_app.c" line="505"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DMA2_Stream2_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;DMA2_Stream2_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_port.c" line="248"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;USART1_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;USART1_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_port.c" line="213"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;gsm_port_power_on&amp;#039; is never used." verbose="The function &amp;#039;gsm_port_power_on&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\gsm_port.c" line="154"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lte_reset_state&amp;#039; is never used." verbose="The function &amp;#039;lte_reset_state&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\gsm\lte_init.c" line="407"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;ret&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;ret&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/ntrip_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\ntrip_app.c" line="162"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;ret&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;ret&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/gsm/ntrip_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\ntrip_app.c" line="314"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;queued_gga&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;queued_gga&amp;#039; shadows outer variable" cwe="398" file0="modules/gsm/ntrip_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\ntrip_app.c" line="559" info="Shadow variable"/>
+            <location file="modules\gsm\ntrip_app.c" line="535" info="Shadowed declaration"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/gsm/ntrip_app.c" sinceDate="2025-12-19">
+            <location file="modules\gsm\ntrip_app.c" line="97"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." cwe="686" file0="modules/lora/lora_app.c" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1216"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pos&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pos&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/lora/lora_app.c" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="739"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;hex&amp;#039; can be declared as const array" verbose="Variable &amp;#039;hex&amp;#039; can be declared as const array" cwe="398" file0="modules/lora/lora_app.c" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="563"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;lora_recv&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;lora_recv&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/lora/lora_app.c" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="776"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/lora/lora_app.c" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="739"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_get_handle&amp;#039; is never used." verbose="The function &amp;#039;lora_get_handle&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1357"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_send_p2p_data&amp;#039; is never used." verbose="The function &amp;#039;lora_send_p2p_data&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1229"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_send_p2p_raw&amp;#039; is never used." verbose="The function &amp;#039;lora_send_p2p_raw&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1242"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_set_p2p_config&amp;#039; is never used." verbose="The function &amp;#039;lora_set_p2p_config&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1212"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_set_p2p_recv_callback&amp;#039; is never used." verbose="The function &amp;#039;lora_set_p2p_recv_callback&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1351"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_set_p2p_transfer_mode&amp;#039; is never used." verbose="The function &amp;#039;lora_set_p2p_transfer_mode&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1222"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;lora_set_work_mode&amp;#039; is never used." verbose="The function &amp;#039;lora_set_work_mode&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_app.c" line="1205"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DMA1_Stream1_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;DMA1_Stream1_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_port.c" line="230"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;USART3_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;USART3_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\lora\lora_port.c" line="194"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;len&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;len&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/params/flash_params.c" sinceDate="2025-12-19">
+            <location file="modules\params\flash_params.c" line="103"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;flash_params_init&amp;#039; is never used." verbose="The function &amp;#039;flash_params_init&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\params\flash_params.c" line="162"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;flash_params_save&amp;#039; is never used." verbose="The function &amp;#039;flash_params_save&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\params\flash_params.c" line="135"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pos&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pos&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="140"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;total_received&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;total_received&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="143"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;pos&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="140"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="143"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="161"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;total_received&amp;#039; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="167"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;rs485_get_instance&amp;#039; is never used." verbose="The function &amp;#039;rs485_get_instance&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="299"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;rs485_init_all&amp;#039; is never used." verbose="The function &amp;#039;rs485_init_all&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_app.c" line="188"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;buf&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;buf&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="203"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;buf&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;buf&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="240"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="202"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="239"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="263"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;params&amp;#039; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="273"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: caster_host" verbose="Uninitialized variable: caster_host" cwe="457" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="220"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: caster_port" verbose="Uninitialized variable: caster_port" cwe="457" file0="modules/rs485/rs485_cmd.c" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="221"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;base_init_complete&amp;#039; is never used." verbose="The function &amp;#039;base_init_complete&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_cmd.c" line="72"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;rs485_port_stop&amp;#039; is never used." verbose="The function &amp;#039;rs485_port_stop&amp;#039; is never used." cwe="561" sinceDate="2025-12-19">
+            <location file="modules\rs485\rs485_port.c" line="292"/>
+        </error>
+    </errors>
+</results>

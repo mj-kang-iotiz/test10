@@ -1,0 +1,12 @@
+gsm_task_create global:[gsm_task_created] call:[xTaskCreate]
+gsm_start_rover global:[gsm_task_created,ntrip_should_restart] call:[LOG_INFO,gsm_port_set_airplane_mode,gsm_task_create,lte_reinit_from_apn] noreturn:[LOG_INFO,gsm_task_create,lte_reinit_from_apn]
+gsm_evt_handler global:[gsm_handle,ntrip_should_restart] call:[LOG_ERR,LOG_INFO,LOG_WARN,gsm_port_get_airplane_mode,led_set_color,lte_get_init_state,lte_get_retry_count,lte_init_start,lte_reinit_from_apn,ntrip_task_create] noreturn:[LOG_INFO,led_set_color,lte_init_start,ntrip_task_create]
+gsm_process_task global:[gsm_handle,gsm_mem,gsm_queue] call:[LOG_DEBUG,gsm_get_rx_pos,gsm_init,gsm_parse_process,gsm_port_init,gsm_start,led_set_color,led_set_state,led_set_toggle,lte_set_gsm_handle,lte_set_network_check_timer,pdMS_TO_TICKS,sizeof,vTaskDelete,xQueueCreate,xQueueReceive,xTaskCreate,xTimerCreate] noreturn:[gsm_parse_process,vTaskDelete]
+gsm_at_cmd_process_task call:[callback,memset,pdMS_TO_TICKS,send,sizeof,strlen,tcp_pbuf_free,vSemaphoreDelete,vTaskDelete,xQueueReceive,xSemaphoreGive,xSemaphoreTake,xTaskGetTickCount] noreturn:[callback,send,tcp_pbuf_free,vSemaphoreDelete,vTaskDelete,xSemaphoreGive]
+socket_state_to_str
+socket_state_check_callback global:[last_qistate_request_tick,last_recv_tick,qistate_timeout_count] call:[LOG_ERR,LOG_INFO,LOG_WARN,socket_state_to_str,xTaskGetTickCount] noreturn:[LOG_ERR,LOG_WARN]
+socket_state_timer_callback global:[gsm_handle,last_qistate_request_tick] call:[LOG_DEBUG,gsm_send_at_qistate,xTaskGetTickCount] noreturn:[gsm_send_at_qistate]
+gsm_socket_monitor_start global:[qistate_timeout_count,socket_state_timer] call:[LOG_INFO,pdMS_TO_TICKS,xTimerCreate,xTimerStart] noreturn:[LOG_INFO,xTimerCreate]
+gsm_socket_monitor_stop global:[socket_state_timer] call:[LOG_INFO,xTimerStop] noreturn:[LOG_INFO]
+gsm_socket_update_recv_time global:[last_recv_tick] call:[xTaskGetTickCount] noreturn:[xTaskGetTickCount]
+gsm_at_power_off global:[gsm_handle] call:[gsm_send_at_qpowd] noreturn:[gsm_send_at_qpowd]

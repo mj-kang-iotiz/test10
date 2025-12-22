@@ -1,0 +1,4 @@
+parse_lat_lon call:[gps_parse_double]
+parse_nmea_gga call:[PARSER_CHAR_DEC_TO_NUM,gps_parse_float,gps_parse_number,parse_lat_lon] noreturn:[PARSER_CHAR_DEC_TO_NUM]
+parse_nmea_gpths call:[gps_parse_character,gps_parse_double]
+gps_parse_nmea_term call:[parse_nmea_gga,parse_nmea_gpths,strncmp] noreturn:[parse_nmea_gga,parse_nmea_gpths]

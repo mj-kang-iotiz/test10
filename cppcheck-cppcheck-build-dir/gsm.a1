@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8758195947248361124">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;parser.h&quot; not found." verbose="Include file: &quot;parser.h&quot; not found.">
+            <location file="lib/gsm/gsm.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="lib/gsm/gsm.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found.">
+            <location file="lib/gsm/gsm.c" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.c" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.c" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/gsm/gsm.c" line="13" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="0" column="0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." verbose="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." cwe="686" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="1381" column="3"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." verbose="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;size_t {aka unsigned long}&apos;." cwe="686" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="1436" column="3"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;target&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;target&apos; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="159" column="29" info="target is overwritten"/>
+            <location file="lib/gsm/gsm.c" line="150" column="12" info="target is assigned"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;target&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;target&apos; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="206" column="30" info="target is overwritten"/>
+            <location file="lib/gsm/gsm.c" line="197" column="12" info="target is assigned"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;target&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;target&apos; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="260" column="29" info="target is overwritten"/>
+            <location file="lib/gsm/gsm.c" line="251" column="12" info="target is assigned"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;target&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;target&apos; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="291" column="35" info="target is overwritten"/>
+            <location file="lib/gsm/gsm.c" line="280" column="12" info="target is assigned"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;target&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;target&apos; is reassigned a value before the old one has been used." cwe="563" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="325" column="30" info="target is overwritten"/>
+            <location file="lib/gsm/gsm.c" line="315" column="12" info="target is assigned"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;params&apos; can be reduced." verbose="The scope of the variable &apos;params&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="760" column="8"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;params&apos; can be reduced." verbose="The scope of the variable &apos;params&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="1484" column="8"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;gsm&apos; can be declared as pointer to const. However it seems that &apos;handle_urc_cmee&apos; is a callback function, if &apos;gsm&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;gsm&apos; can be declared as pointer to const. However it seems that &apos;handle_urc_cmee&apos; is a callback function, if &apos;gsm&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="39" column="29" info="Parameter &apos;gsm&apos; can be declared as pointer to const"/>
+            <location file="lib/gsm/gsm.c" line="438" column="17" info="You might need to cast the function pointer here"/>
+            <symbol>gsm</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;gsm&apos; can be declared as pointer to const. However it seems that &apos;handle_urc_qcfg&apos; is a callback function, if &apos;gsm&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;gsm&apos; can be declared as pointer to const. However it seems that &apos;handle_urc_qcfg&apos; is a callback function, if &apos;gsm&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="418" column="29" info="Parameter &apos;gsm&apos; can be declared as pointer to const"/>
+            <location file="lib/gsm/gsm.c" line="448" column="17" info="You might need to cast the function pointer here"/>
+            <symbol>gsm</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;line&apos; can be declared as pointer to const" verbose="Variable &apos;line&apos; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="552" column="9" info="Variable &apos;line&apos; can be declared as pointer to const"/>
+            <symbol>line</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;ctx&apos; can be declared as pointer to const" verbose="Parameter &apos;ctx&apos; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="771" column="45" info="Parameter &apos;ctx&apos; can be declared as pointer to const"/>
+            <symbol>ctx</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;socket&apos; can be declared as pointer to const" verbose="Variable &apos;socket&apos; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="1359" column="21" info="Variable &apos;socket&apos; can be declared as pointer to const"/>
+            <symbol>socket</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;socket&apos; can be declared as pointer to const" verbose="Variable &apos;socket&apos; can be declared as pointer to const" cwe="398" file0="lib/gsm/gsm.c">
+            <location file="lib/gsm/gsm.c" line="1421" column="21" info="Variable &apos;socket&apos; can be declared as pointer to const"/>
+            <symbol>socket</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="764" col="20" call-argexpr="params" call-argvaluetype="7" call-argvalue="8" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="766" col="20" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="3" file="lib/gsm/gsm.c" line="1476" col="18" call-argexpr="GSM_AT_EXECUTE" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1476" col="18" call-argexpr="params" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1488" col="20" call-argexpr="params" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1490" col="20" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1503" col="18" call-argexpr="params" call-argvaluetype="7" call-argvalue="8" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1513" col="18" call-argexpr="params" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1519" col="18" call-argexpr="params" call-argvaluetype="7" call-argvalue="4" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="4" file="lib/gsm/gsm.c" line="1530" col="18" call-argexpr="params" call-argvaluetype="7" call-argvalue="32" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="764" col="5" my-id="lib/gsm/gsm.c:758:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="764" col="5" my-id="lib/gsm/gsm.c:758:6" my-argnr="4"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1476" col="3" my-id="lib/gsm/gsm.c:1473:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1476" col="3" my-id="lib/gsm/gsm.c:1473:6" my-argnr="3"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1488" col="5" my-id="lib/gsm/gsm.c:1482:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1488" col="5" my-id="lib/gsm/gsm.c:1482:6" my-argnr="4"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1503" col="3" my-id="lib/gsm/gsm.c:1497:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1503" col="3" my-id="lib/gsm/gsm.c:1497:6" my-argnr="4"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1513" col="3" my-id="lib/gsm/gsm.c:1506:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1513" col="3" my-id="lib/gsm/gsm.c:1506:6" my-argnr="6"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1519" col="3" my-id="lib/gsm/gsm.c:1516:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1519" col="3" my-id="lib/gsm/gsm.c:1516:6" my-argnr="3"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="1" file="lib/gsm/gsm.c" line="1530" col="3" my-id="lib/gsm/gsm.c:1522:6" my-argnr="1"/>
+<function-call call-id="lib/gsm/gsm.h:470:6" call-funcname="gsm_send_at_cmd" call-argnr="5" file="lib/gsm/gsm.c" line="1530" col="3" my-id="lib/gsm/gsm.c:1522:6" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="lib/gsm/gsm.c:19:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="21" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:29:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="31" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:44:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="51" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:83:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="89" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:110:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="116" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:144:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="149" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:191:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="196" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:245:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="250" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:274:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="279" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:308:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="314" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:17:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="422" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:476:20" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="477" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:483:20" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="484" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:488:22" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="488" col="60" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:490:13" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="491" col="38" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:511:13" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="512" col="38" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:551:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="552" col="16" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:856:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="857" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="lib/gsm/gsm.c:44:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="51" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:83:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="89" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:110:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="116" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:144:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="149" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:191:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="196" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:245:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="250" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:274:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="279" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:308:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="314" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:17:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="422" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:476:20" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="477" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:488:22" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="488" col="60" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:490:13" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="491" col="38" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:511:13" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="512" col="38" value="0"/>
+    <unsafe-usage my-id="lib/gsm/gsm.c:551:6" my-argnr="1" my-argname="gsm" file="lib/gsm/gsm.c" line="552" col="16" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_rdy" lineNumber="19" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_powered_down" lineNumber="29" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_cmee" lineNumber="39" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_cgdcont" lineNumber="44" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_cpin" lineNumber="83" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_cops" lineNumber="110" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qiopen" lineNumber="144" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qiclose" lineNumber="191" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qisend" lineNumber="245" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qird" lineNumber="274" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qistate" lineNumber="308" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qiurc" lineNumber="348" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_qcfg" lineNumber="418" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="add_payload" lineNumber="476" column="20"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="clear_payload" lineNumber="483" column="20"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="recv_payload_len" lineNumber="488" column="22"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_status" lineNumber="490" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="handle_urc_info" lineNumber="511" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_parse_response" lineNumber="551" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_parse_process" lineNumber="630" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_cmd" lineNumber="710" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_cmee" lineNumber="758" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_cgdcont" lineNumber="770" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_uart_send" lineNumber="838" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_init" lineNumber="856" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_pbuf_alloc" lineNumber="877" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_pbuf_free" lineNumber="895" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_pbuf_free_chain" lineNumber="905" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_pbuf_enqueue" lineNumber="915" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_pbuf_dequeue" lineNumber="943" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="tcp_read_complete_callback" lineNumber="960" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_task" lineNumber="997" column="13"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_init" lineNumber="1054" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_get_socket" lineNumber="1081" column="19"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_open" lineNumber="1089" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_close" lineNumber="1182" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_close_force" lineNumber="1275" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_send" lineNumber="1352" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_tcp_read" lineNumber="1414" column="5"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_ate" lineNumber="1473" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_qisde" lineNumber="1482" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_qistate" lineNumber="1497" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_qicfg_keepalive" lineNumber="1506" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_qpowd" lineNumber="1516" column="6"/>
+    <functiondecl file="lib/gsm/gsm.c" functionName="gsm_send_at_qcfg_airplanecontrol" lineNumber="1522" column="6"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TC"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TXE"/>
+    <functioncall functionName="LL_USART_TransmitData8"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="USART1"/>
+    <functioncall functionName="add_payload"/>
+    <functioncall functionName="clear_payload"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="gsm_parse_response"/>
+    <functioncall functionName="gsm_port_reset"/>
+    <functioncall functionName="gsm_send_at_cmd"/>
+    <functioncall functionName="gsm_tcp_init"/>
+    <functioncall functionName="gsm_tcp_read"/>
+    <functioncall functionName="gsm_tcp_task"/>
+    <functioncall functionName="gsm_uart_send"/>
+    <functioncall functionName="handle_urc_cgdcont"/>
+    <functioncall functionName="handle_urc_cmee"/>
+    <functioncall functionName="handle_urc_cops"/>
+    <functioncall functionName="handle_urc_cpin"/>
+    <functioncall functionName="handle_urc_info"/>
+    <functioncall functionName="handle_urc_powered_down"/>
+    <functioncall functionName="handle_urc_qcfg"/>
+    <functioncall functionName="handle_urc_qiclose"/>
+    <functioncall functionName="handle_urc_qiopen"/>
+    <functioncall functionName="handle_urc_qird"/>
+    <functioncall functionName="handle_urc_qisend"/>
+    <functioncall functionName="handle_urc_qistate"/>
+    <functioncall functionName="handle_urc_qiurc"/>
+    <functioncall functionName="handle_urc_rdy"/>
+    <functioncall functionName="handle_urc_status"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="parse_int32"/>
+    <functioncall functionName="parse_string"/>
+    <functioncall functionName="parse_string_quoted"/>
+    <functioncall functionName="parse_uint32"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="pvPortMalloc"/>
+    <functioncall functionName="recv_payload_len"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="tcp_pbuf_alloc"/>
+    <functioncall functionName="tcp_pbuf_dequeue"/>
+    <functioncall functionName="tcp_pbuf_enqueue"/>
+    <functioncall functionName="tcp_pbuf_free"/>
+    <functioncall functionName="tcp_pbuf_free_chain"/>
+    <functioncall functionName="tcp_read_complete_callback"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vPortFree"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateBinary"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+  </FileInfo>
+</analyzerinfo>

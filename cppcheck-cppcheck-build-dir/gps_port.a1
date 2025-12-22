@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13497904474950681442">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_pwr.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_pwr.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_rcc.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_rcc.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_system.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_system.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_utils.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_utils.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/f9p_baudrate_config.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gps/gps_port.c" line="19" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart2_init" lineNumber="37" column="13"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart2_dma_init" lineNumber="117" column="13"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_uart2_init" lineNumber="134" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart2_comm_start" lineNumber="157" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_gpio_start" lineNumber="183" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_reset" lineNumber="189" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_start" lineNumber="202" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart2_send" lineNumber="210" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="USART2_IRQHandler" lineNumber="237" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="DMA1_Stream5_IRQHandler" lineNumber="276" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_init_instance" lineNumber="278" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart4_init" lineNumber="343" column="13"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart4_dma_init" lineNumber="421" column="13"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_uart4_init" lineNumber="433" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart4_comm_start" lineNumber="456" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_uart4_gpio_start" lineNumber="478" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_uart4_reset" lineNumber="484" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_rtk_uart4_start" lineNumber="493" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_uart4_send" lineNumber="501" column="5"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="DMA1_Stream2_IRQHandler" lineNumber="525" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="UART4_IRQHandler" lineNumber="532" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_start" lineNumber="571" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_stop" lineNumber="585" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_get_rx_pos" lineNumber="599" column="10"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_get_recv_buf" lineNumber="622" column="7"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_set_queue" lineNumber="632" column="6"/>
+    <functiondecl file="modules/gps/gps_port.c" functionName="gps_port_cleanup_instance" lineNumber="640" column="6"/>
+    <functioncall functionName="DMA1"/>
+    <functioncall functionName="DMA1_Stream2_IRQn"/>
+    <functioncall functionName="DMA1_Stream5_IRQn"/>
+    <functioncall functionName="DR"/>
+    <functioncall functionName="GPIOA"/>
+    <functioncall functionName="GPIO_PIN_5"/>
+    <functioncall functionName="GPIO_PIN_8"/>
+    <functioncall functionName="GPIO_PIN_RESET"/>
+    <functioncall functionName="GPIO_PIN_SET"/>
+    <functioncall functionName="GPS_CNT"/>
+    <functioncall functionName="GPS_ID_BASE"/>
+    <functioncall functionName="GPS_ID_ROVER"/>
+    <functioncall functionName="GPS_TYPE_F9P"/>
+    <functioncall functionName="HAL_Delay"/>
+    <functioncall functionName="HAL_GPIO_WritePin"/>
+    <functioncall functionName="LL_AHB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_DMA1"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_GPIOA"/>
+    <functioncall functionName="LL_APB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_APB1_GRP1_PERIPH_UART4"/>
+    <functioncall functionName="LL_APB1_GRP1_PERIPH_USART2"/>
+    <functioncall functionName="LL_DMA_CHANNEL_4"/>
+    <functioncall functionName="LL_DMA_DIRECTION_PERIPH_TO_MEMORY"/>
+    <functioncall functionName="LL_DMA_DisableFifoMode"/>
+    <functioncall functionName="LL_DMA_DisableStream"/>
+    <functioncall functionName="LL_DMA_EnableIT_DME"/>
+    <functioncall functionName="LL_DMA_EnableIT_FE"/>
+    <functioncall functionName="LL_DMA_EnableIT_TE"/>
+    <functioncall functionName="LL_DMA_EnableStream"/>
+    <functioncall functionName="LL_DMA_GetDataLength"/>
+    <functioncall functionName="LL_DMA_MDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_MEMORY_INCREMENT"/>
+    <functioncall functionName="LL_DMA_MODE_CIRCULAR"/>
+    <functioncall functionName="LL_DMA_PDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_PERIPH_NOINCREMENT"/>
+    <functioncall functionName="LL_DMA_PRIORITY_LOW"/>
+    <functioncall functionName="LL_DMA_STREAM_2"/>
+    <functioncall functionName="LL_DMA_STREAM_5"/>
+    <functioncall functionName="LL_DMA_SetChannelSelection"/>
+    <functioncall functionName="LL_DMA_SetDataLength"/>
+    <functioncall functionName="LL_DMA_SetDataTransferDirection"/>
+    <functioncall functionName="LL_DMA_SetMemoryAddress"/>
+    <functioncall functionName="LL_DMA_SetMemoryIncMode"/>
+    <functioncall functionName="LL_DMA_SetMemorySize"/>
+    <functioncall functionName="LL_DMA_SetMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphAddress"/>
+    <functioncall functionName="LL_DMA_SetPeriphIncMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphSize"/>
+    <functioncall functionName="LL_DMA_SetStreamPriorityLevel"/>
+    <functioncall functionName="LL_GPIO_AF_7"/>
+    <functioncall functionName="LL_GPIO_AF_8"/>
+    <functioncall functionName="LL_GPIO_Init"/>
+    <functioncall functionName="LL_GPIO_MODE_ALTERNATE"/>
+    <functioncall functionName="LL_GPIO_OUTPUT_PUSHPULL"/>
+    <functioncall functionName="LL_GPIO_PIN_1"/>
+    <functioncall functionName="LL_GPIO_PIN_3"/>
+    <functioncall functionName="LL_GPIO_PULL_NO"/>
+    <functioncall functionName="LL_GPIO_SPEED_FREQ_VERY_HIGH"/>
+    <functioncall functionName="LL_USART_ClearFlag_FE"/>
+    <functioncall functionName="LL_USART_ClearFlag_IDLE"/>
+    <functioncall functionName="LL_USART_ClearFlag_NE"/>
+    <functioncall functionName="LL_USART_ClearFlag_ORE"/>
+    <functioncall functionName="LL_USART_ClearFlag_PE"/>
+    <functioncall functionName="LL_USART_ConfigAsyncMode"/>
+    <functioncall functionName="LL_USART_DATAWIDTH_8B"/>
+    <functioncall functionName="LL_USART_DIRECTION_TX_RX"/>
+    <functioncall functionName="LL_USART_Disable"/>
+    <functioncall functionName="LL_USART_DisableDMAReq_RX"/>
+    <functioncall functionName="LL_USART_DisableIT_ERROR"/>
+    <functioncall functionName="LL_USART_DisableIT_IDLE"/>
+    <functioncall functionName="LL_USART_DisableIT_PE"/>
+    <functioncall functionName="LL_USART_Enable"/>
+    <functioncall functionName="LL_USART_EnableDMAReq_RX"/>
+    <functioncall functionName="LL_USART_EnableIT_ERROR"/>
+    <functioncall functionName="LL_USART_EnableIT_IDLE"/>
+    <functioncall functionName="LL_USART_EnableIT_PE"/>
+    <functioncall functionName="LL_USART_HWCONTROL_NONE"/>
+    <functioncall functionName="LL_USART_Init"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_FE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_IDLE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_NE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_ORE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_PE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TC"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TXE"/>
+    <functioncall functionName="LL_USART_OVERSAMPLING_16"/>
+    <functioncall functionName="LL_USART_PARITY_NONE"/>
+    <functioncall functionName="LL_USART_STOPBITS_1"/>
+    <functioncall functionName="LL_USART_TransmitData8"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="NVIC_DisableIRQ"/>
+    <functioncall functionName="NVIC_EnableIRQ"/>
+    <functioncall functionName="NVIC_EncodePriority"/>
+    <functioncall functionName="NVIC_GetPriorityGrouping"/>
+    <functioncall functionName="NVIC_SetPriority"/>
+    <functioncall functionName="UART4"/>
+    <functioncall functionName="UART4_IRQn"/>
+    <functioncall functionName="USART2"/>
+    <functioncall functionName="USART2_IRQn"/>
+    <functioncall functionName="__HAL_RCC_DMA1_CLK_ENABLE"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="f9p_init_rover_uart1_baudrate_115200"/>
+    <functioncall functionName="f9p_init_uart1_baudrate_115200"/>
+    <functioncall functionName="gps_rtk_gpio_start"/>
+    <functioncall functionName="gps_rtk_reset"/>
+    <functioncall functionName="gps_rtk_start"/>
+    <functioncall functionName="gps_rtk_uart2_init"/>
+    <functioncall functionName="gps_rtk_uart4_gpio_start"/>
+    <functioncall functionName="gps_rtk_uart4_init"/>
+    <functioncall functionName="gps_rtk_uart4_reset"/>
+    <functioncall functionName="gps_rtk_uart4_start"/>
+    <functioncall functionName="gps_uart2_comm_start"/>
+    <functioncall functionName="gps_uart2_dma_init"/>
+    <functioncall functionName="gps_uart2_init"/>
+    <functioncall functionName="gps_uart2_send"/>
+    <functioncall functionName="gps_uart4_comm_start"/>
+    <functioncall functionName="gps_uart4_dma_init"/>
+    <functioncall functionName="gps_uart4_init"/>
+    <functioncall functionName="gps_uart4_send"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="pdFALSE"/>
+    <functioncall functionName="portYIELD_FROM_ISR"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="stop"/>
+    <functioncall functionName="xQueueSendFromISR"/>
+  </FileInfo>
+</analyzerinfo>

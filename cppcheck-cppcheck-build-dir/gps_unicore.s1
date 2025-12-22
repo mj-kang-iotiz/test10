@@ -1,0 +1,8 @@
+gps_get_unicore_response
+gps_parse_unicore_term call:[strstr]
+calc_unicore_binary_chksum call:[calc_crc32]
+check_unicore_binary_chksum call:[calc_unicore_binary_chksum]
+store_unicore_bin_bestnavb_data call:[memcpy,sizeof] noreturn:[memcpy]
+store_unicore_bin_data call:[store_unicore_bin_bestnavb_data]
+gps_parse_unicore_bin call:[check_unicore_binary_chksum,handler,memcpy,memset,sizeof,store_unicore_bin_data]
+calc_crc32 global:[crc_table]

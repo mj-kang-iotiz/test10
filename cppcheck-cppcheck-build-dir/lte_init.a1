@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16991144789882608975">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/gsm/lte_init.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/gsm/lte_init.c" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gsm/lte_init.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gsm/lte_init.c" line="9" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_set_gsm_handle" lineNumber="44" column="6"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_set_network_check_timer" lineNumber="49" column="6"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_get_init_state" lineNumber="56" column="18"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_get_retry_count" lineNumber="61" column="9"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_init_fail_with_retry" lineNumber="66" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_init_start" lineNumber="113" column="6"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_at_test_callback" lineNumber="133" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_echo_off_callback" lineNumber="153" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_cmee_set_callback" lineNumber="173" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_qisde_off_callback" lineNumber="191" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_airplane_ctrl_set_callback" lineNumber="204" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_cpin_check_callback" lineNumber="221" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_apn_set_callback" lineNumber="251" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_apn_verify_callback" lineNumber="267" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_network_check_callback" lineNumber="304" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_network_check_timer_callback" lineNumber="363" column="6"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_keepalive_set_callback" lineNumber="373" column="13"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_reinit_from_apn" lineNumber="387" column="6"/>
+    <functiondecl file="modules/gsm/lte_init.c" functionName="lte_reset_state" lineNumber="407" column="6"/>
+    <functioncall functionName="GSM_AT_EXECUTE"/>
+    <functioncall functionName="GSM_AT_READ"/>
+    <functioncall functionName="GSM_AT_WRITE"/>
+    <functioncall functionName="GSM_CMD_AT"/>
+    <functioncall functionName="GSM_CMD_COPS"/>
+    <functioncall functionName="GSM_CMD_CPIN"/>
+    <functioncall functionName="GSM_CMEE_ENABLE_VERBOSE"/>
+    <functioncall functionName="GSM_EVT_INIT_FAIL"/>
+    <functioncall functionName="GSM_EVT_INIT_OK"/>
+    <functioncall functionName="GSM_PDP_TYPE_IP"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="gsm_send_at_ate"/>
+    <functioncall functionName="gsm_send_at_cgdcont"/>
+    <functioncall functionName="gsm_send_at_cmd"/>
+    <functioncall functionName="gsm_send_at_cmee"/>
+    <functioncall functionName="gsm_send_at_qcfg_airplanecontrol"/>
+    <functioncall functionName="gsm_send_at_qicfg_keepalive"/>
+    <functioncall functionName="gsm_send_at_qisde"/>
+    <functioncall functionName="handler"/>
+    <functioncall functionName="lte_airplane_ctrl_set_callback"/>
+    <functioncall functionName="lte_apn_set_callback"/>
+    <functioncall functionName="lte_apn_verify_callback"/>
+    <functioncall functionName="lte_at_test_callback"/>
+    <functioncall functionName="lte_cmee_set_callback"/>
+    <functioncall functionName="lte_cpin_check_callback"/>
+    <functioncall functionName="lte_echo_off_callback"/>
+    <functioncall functionName="lte_init_fail_with_retry"/>
+    <functioncall functionName="lte_init_start"/>
+    <functioncall functionName="lte_keepalive_set_callback"/>
+    <functioncall functionName="lte_network_check_callback"/>
+    <functioncall functionName="lte_qisde_off_callback"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="reset"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xTimerStart"/>
+    <functioncall functionName="xTimerStop"/>
+  </FileInfo>
+</analyzerinfo>

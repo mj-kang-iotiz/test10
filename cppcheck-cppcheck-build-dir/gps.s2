@@ -1,0 +1,13 @@
+_gps_gga_raw_add
+add_nmea_chksum
+check_nmea_chksum call:[PARSER_CHAR_HEX_TO_NUM]
+add_payload
+term_add
+term_next
+term_add_unicore
+term_next_unicore
+add_unicore_chksum
+check_unicore_chksum call:[PARSER_CHAR_HEX_TO_NUM]
+gps_init call:[memset,sizeof,ubx_cmd_handler_init,ubx_init_context_init,xSemaphoreCreateMutex] noreturn:[ubx_init_context_init]
+gps_parse_process call:[add_nmea_chksum,add_payload,add_unicore_chksum,check_nmea_chksum,check_unicore_chksum,gps_parse_nmea_term,gps_parse_ubx,gps_parse_unicore_bin,gps_parse_unicore_term,handler,memset,sizeof,strcmp,term_add,term_add_unicore,term_next,term_next_unicore] noreturn:[add_nmea_chksum,add_payload,add_unicore_chksum,gps_parse_ubx,gps_parse_unicore_bin,handler,term_add,term_add_unicore,term_next,term_next_unicore]
+gps_set_evt_handler

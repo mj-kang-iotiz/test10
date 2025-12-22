@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7407156777391699122">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="lib/rs485/softuart.c" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/rs485/softuart.h" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="lib/rs485/softuart.h" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/rs485/softuart.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="lib/rs485/softuart.c" line="10" column="0"/>
+        </error>
+</analyzerinfo>

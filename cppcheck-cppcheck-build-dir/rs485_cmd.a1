@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10707033510820557965">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx.h&quot; not found." verbose="Include file: &quot;stm32f4xx.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485.h&quot; not found." verbose="Include file: &quot;rs485.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.h" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_cmd.c" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_cmd.c" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_cmd.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_app.h&quot; not found." verbose="Include file: &quot;gps_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lora_app.h&quot; not found." verbose="Include file: &quot;lora_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm_app.h&quot; not found." verbose="Include file: &quot;gsm_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lte_init.h&quot; not found." verbose="Include file: &quot;lte_init.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="14" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/rs485/rs485_cmd.c" line="21" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buf&apos; can be reduced." verbose="The scope of the variable &apos;buf&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="203" column="10"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buf&apos; can be reduced." verbose="The scope of the variable &apos;buf&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="240" column="10"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="202" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="239" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="263" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="273" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: caster_host" verbose="Uninitialized variable: caster_host" cwe="457" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="220" column="29"/>
+            <symbol>caster_host</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: caster_port" verbose="Uninitialized variable: caster_port" cwe="457" file0="modules/rs485/rs485_cmd.c">
+            <location file="modules/rs485/rs485_cmd.c" line="221" column="29"/>
+            <symbol>caster_port</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="135" col="5" call-argexpr="version_str" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="157" col="5" call-argexpr="manuf_str" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="180" col="5" call-argexpr="resp_str" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="233" col="9" call-argexpr="buf" call-argvaluetype="7" call-argvalue="72" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="257" col="9" call-argexpr="buf" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="268" col="5" call-argexpr="buf" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/rs485/rs485_app.h:62:6" call-funcname="rs485_send" call-argnr="1" file="modules/rs485/rs485_cmd.c" line="279" col="5" call-argexpr="passwd" call-argvaluetype="7" call-argvalue="32" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:42:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="185" col="35" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:43:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="208" col="30" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:44:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="242" col="26" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:47:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="284" col="17" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:42:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="185" col="35" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:43:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="208" col="30" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:44:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="242" col="26" value="0"/>
+    <unsafe-usage my-id="modules/rs485/rs485_cmd.c:47:13" my-argnr="1" my-argname="param" file="modules/rs485/rs485_cmd.c" line="284" col="17" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="base_init_complete" lineNumber="72" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="rs485_at_cmd_handler" lineNumber="80" column="6"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_handler" lineNumber="94" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="atz_handler" lineNumber="99" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="atandz_handler" lineNumber="113" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_ver_handler" lineNumber="131" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_gps_manuf_handler" lineNumber="138" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_read_config_handler" lineNumber="160" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_baseline_handler" lineNumber="183" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_ntrip_ip_handler" lineNumber="200" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_ntrip_id_handler" lineNumber="237" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_ntrip_mountpoint_handler" lineNumber="261" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_ntrip_passwd_handler" lineNumber="271" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_rtk_start_handler" lineNumber="282" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_set_rtk_stop_handler" lineNumber="328" column="13"/>
+    <functiondecl file="modules/rs485/rs485_cmd.c" functionName="at_save_handler" lineNumber="371" column="13"/>
+    <functioncall functionName="BOARD_VERSION"/>
+    <functioncall functionName="HAL_NVIC_SystemReset"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="NVIC_SystemReset"/>
+    <functioncall functionName="at_gps_manuf_handler"/>
+    <functioncall functionName="at_handler"/>
+    <functioncall functionName="at_read_config_handler"/>
+    <functioncall functionName="at_save_handler"/>
+    <functioncall functionName="at_set_baseline_handler"/>
+    <functioncall functionName="at_set_ntrip_id_handler"/>
+    <functioncall functionName="at_set_ntrip_ip_handler"/>
+    <functioncall functionName="at_set_ntrip_mountpoint_handler"/>
+    <functioncall functionName="at_set_ntrip_passwd_handler"/>
+    <functioncall functionName="at_set_rtk_start_handler"/>
+    <functioncall functionName="at_set_rtk_stop_handler"/>
+    <functioncall functionName="at_ver_handler"/>
+    <functioncall functionName="atandz_handler"/>
+    <functioncall functionName="atz_handler"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_erase"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="flash_params_set_baseline_len"/>
+    <functioncall functionName="flash_params_set_ntrip_id"/>
+    <functioncall functionName="flash_params_set_ntrip_mountpoint"/>
+    <functioncall functionName="flash_params_set_ntrip_port"/>
+    <functioncall functionName="flash_params_set_ntrip_pw"/>
+    <functioncall functionName="flash_params_set_ntrip_url"/>
+    <functioncall functionName="flash_params_write"/>
+    <functioncall functionName="gps_cleanup_all"/>
+    <functioncall functionName="gps_id_t"/>
+    <functioncall functionName="gps_init_all"/>
+    <functioncall functionName="gps_set_heading_length"/>
+    <functioncall functionName="gsm_port_set_airplane_mode"/>
+    <functioncall functionName="gsm_start_rover"/>
+    <functioncall functionName="lora_instance_deinit"/>
+    <functioncall functionName="lora_start_rover"/>
+    <functioncall functionName="lte_get_init_state"/>
+    <functioncall functionName="ntrip_stop"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="rs485_get_handle"/>
+    <functioncall functionName="rs485_send"/>
+    <functioncall functionName="rx_enable"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strrchr"/>
+    <functioncall functionName="strtof"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="tx_enable"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="xTimerStart"/>
+    <functioncall functionName="xTimerStop"/>
+  </FileInfo>
+</analyzerinfo>

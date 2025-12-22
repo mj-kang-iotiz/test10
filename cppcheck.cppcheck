@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>cppcheck-cppcheck-build-dir</builddir>
+    <platform>arm32-wchar_t2.xml</platform>
+    <analyze-all-vs-configs>false</analyze-all-vs-configs>
+    <check-headers>false</check-headers>
+    <check-unused-templates>true</check-unused-templates>
+    <inline-suppression>true</inline-suppression>
+    <max-ctu-depth>2</max-ctu-depth>
+    <max-template-recursion>100</max-template-recursion>
+    <defines>
+        <define name="STM32F405xx"/>
+    </defines>
+    <paths>
+        <dir name="lib/ble"/>
+        <dir name="lib/gps"/>
+        <dir name="lib/gsm"/>
+        <dir name="lib/led"/>
+        <dir name="lib/log"/>
+        <dir name="lib/lora"/>
+        <dir name="lib/parser"/>
+        <dir name="lib/rs485"/>
+        <dir name="modules/ble"/>
+        <dir name="modules/gps"/>
+        <dir name="modules/gsm"/>
+        <dir name="modules/lora"/>
+        <dir name="modules/params"/>
+        <dir name="modules/rs485"/>
+        <dir name="config"/>
+        <dir name="Core/Inc"/>
+    </paths>
+    <check-level-normal/>
+    <project-name>cppcheck</project-name>
+</project>

@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="780870463278864513">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lora.h&quot; not found." verbose="Include file: &quot;lora.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="1" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lora.h&quot; not found." verbose="Include file: &quot;lora.h&quot; not found.">
+            <location file="modules/lora/lora_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/lora/lora_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/lora/lora_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/lora/lora_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/lora/lora_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/lora/lora_port.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/lora/lora_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lora.h&quot; not found." verbose="Include file: &quot;lora.h&quot; not found.">
+            <location file="modules/lora/lora_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/lora/lora_port.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_app.h&quot; not found." verbose="Include file: &quot;gps_app.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_app.c" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_app.c" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/lora/lora_app.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;led.h&quot; not found." verbose="Include file: &quot;led.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/lora/lora_app.c" line="17" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="0" column="0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="1216" column="3"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pos&apos; can be reduced." verbose="The scope of the variable &apos;pos&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="739" column="10"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;hex&apos; can be declared as const array" verbose="Variable &apos;hex&apos; can be declared as const array" cwe="398" file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="563" column="10" info="Variable &apos;hex&apos; can be declared as const array"/>
+            <symbol>hex</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;lora_recv&apos; can be declared as pointer to const" verbose="Variable &apos;lora_recv&apos; can be declared as pointer to const" cwe="398" file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="776" column="11" info="Variable &apos;lora_recv&apos; can be declared as pointer to const"/>
+            <symbol>lora_recv</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pos&apos; is assigned a value that is never used." verbose="Variable &apos;pos&apos; is assigned a value that is never used." cwe="563" file0="modules/lora/lora_app.c">
+            <location file="modules/lora/lora_app.c" line="739" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="3" file="modules/lora/lora_app.c" line="157" col="28" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="3" file="modules/lora/lora_app.c" line="176" col="30" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="3" file="modules/lora/lora_app.c" line="221" col="31" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="3" file="modules/lora/lora_app.c" line="257" col="31" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:356:13" call-funcname="lora_parse_at_response" call-argnr="1" file="modules/lora/lora_app.c" line="793" col="47" call-argexpr="temp_buf" call-argvaluetype="7" call-argvalue="1024" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:511:13" call-funcname="lora_parse_p2p_recv" call-argnr="1" file="modules/lora/lora_app.c" line="833" col="34" call-argexpr="temp_buf" call-argvaluetype="7" call-argvalue="1024" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:511:13" call-funcname="lora_parse_p2p_recv" call-argnr="2" file="modules/lora/lora_app.c" line="833" col="34" call-argexpr="&amp;recv_data" call-argvaluetype="7" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:356:13" call-funcname="lora_parse_at_response" call-argnr="1" file="modules/lora/lora_app.c" line="920" col="47" call-argexpr="temp_buf" call-argvaluetype="7" call-argvalue="1024" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:511:13" call-funcname="lora_parse_p2p_recv" call-argnr="1" file="modules/lora/lora_app.c" line="946" col="34" call-argexpr="temp_buf" call-argvaluetype="7" call-argvalue="1024" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.c:511:13" call-funcname="lora_parse_p2p_recv" call-argnr="2" file="modules/lora/lora_app.c" line="946" col="34" call-argexpr="&amp;recv_data" call-argvaluetype="7" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:100:6" call-funcname="lora_send_command_sync" call-argnr="1" file="modules/lora/lora_app.c" line="1209" col="32" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:100:6" call-funcname="lora_send_command_sync" call-argnr="1" file="modules/lora/lora_app.c" line="1219" col="32" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:100:6" call-funcname="lora_send_command_sync" call-argnr="1" file="modules/lora/lora_app.c" line="1226" col="32" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:100:6" call-funcname="lora_send_command_sync" call-argnr="1" file="modules/lora/lora_app.c" line="1239" col="32" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="512" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:100:6" call-funcname="lora_send_command_sync" call-argnr="1" file="modules/lora/lora_app.c" line="1289" col="32" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="600" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="1" file="modules/lora/lora_app.c" line="1348" col="33" call-argexpr="cmd" call-argvaluetype="7" call-argvalue="300" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="3" file="modules/lora/lora_app.c" line="1348" col="33" call-argexpr="toa_ms" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0">
+  <path file="modules\lora\lora_app.c" line="1341" col="21" info="Assignment &apos;toa_ms=0&apos;, assigned value is 0"/>
+</function-call><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="6" file="modules/lora/lora_app.c" line="1348" col="33" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="4" file="modules/lora/lora_app.c" line="1348" col="10" my-id="modules/lora/lora_app.c:1292:6" my-argnr="4"/>
+<function-call call-id="modules/lora/lora_app.h:113:6" call-funcname="lora_send_command_async" call-argnr="5" file="modules/lora/lora_app.c" line="1348" col="10" my-id="modules/lora/lora_app.c:1292:6" my-argnr="5"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="modules/lora/lora_app.c:356:13" my-argnr="1" my-argname="data" file="modules/lora/lora_app.c" line="362" col="14" value="0"/>
+    <unsafe-usage my-id="modules/lora/lora_app.c:379:13" my-argnr="1" my-argname="reasm" file="modules/lora/lora_app.c" line="381" col="3" value="0"/>
+    <unsafe-usage my-id="modules/lora/lora_app.c:398:13" my-argnr="1" my-argname="reasm" file="modules/lora/lora_app.c" line="403" col="7" value="0"/>
+    <unsafe-usage my-id="modules/lora/lora_app.c:511:13" my-argnr="1" my-argname="data" file="modules/lora/lora_app.c" line="514" col="30" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="modules/lora/lora_app.c:356:13" my-argnr="1" my-argname="data" file="modules/lora/lora_app.c" line="362" col="14" value="0"/>
+    <unsafe-usage my-id="modules/lora/lora_app.c:398:13" my-argnr="1" my-argname="reasm" file="modules/lora/lora_app.c" line="403" col="7" value="0"/>
+    <unsafe-usage my-id="modules/lora/lora_app.c:511:13" my-argnr="1" my-argname="data" file="modules/lora/lora_app.c" line="514" col="30" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_overall_init_complete" lineNumber="88" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_init_command_callback" lineNumber="120" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_init_p2p_base_async" lineNumber="199" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_init_p2p_rover_async" lineNumber="235" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="rtcm_crc24q" lineNumber="275" column="17"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="rtcm_validate_packet" lineNumber="304" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_parse_at_response" lineNumber="356" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="rtcm_reassembly_reset" lineNumber="379" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="rtcm_reassembly_process" lineNumber="398" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_parse_p2p_recv" lineNumber="511" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_tx_task" lineNumber="577" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_process_task" lineNumber="737" column="13"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_instance_init" lineNumber="1024" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_send_command_sync" lineNumber="1090" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_send_command_async" lineNumber="1152" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_set_work_mode" lineNumber="1205" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_set_p2p_config" lineNumber="1212" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_set_p2p_transfer_mode" lineNumber="1222" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_send_p2p_data" lineNumber="1229" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_send_p2p_raw" lineNumber="1242" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_send_p2p_raw_async" lineNumber="1292" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_set_p2p_recv_callback" lineNumber="1351" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_get_handle" lineNumber="1357" column="9"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_instance_deinit" lineNumber="1362" column="6"/>
+    <functiondecl file="modules/lora/lora_app.c" functionName="lora_start_rover" lineNumber="1483" column="7"/>
+    <functioncall functionName="GPS_ID_BASE"/>
+    <functioncall functionName="LED_COLOR_GREEN"/>
+    <functioncall functionName="LED_COLOR_NONE"/>
+    <functioncall functionName="LED_COLOR_RED"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="configTICK_RATE_HZ"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="gps_send_raw_data"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="led_set_state"/>
+    <functioncall functionName="led_set_toggle"/>
+    <functioncall functionName="lora_init"/>
+    <functioncall functionName="lora_init_command_callback"/>
+    <functioncall functionName="lora_init_p2p_base_async"/>
+    <functioncall functionName="lora_init_p2p_rover_async"/>
+    <functioncall functionName="lora_instance_init"/>
+    <functioncall functionName="lora_overall_init_complete"/>
+    <functioncall functionName="lora_parse_at_response"/>
+    <functioncall functionName="lora_parse_p2p_recv"/>
+    <functioncall functionName="lora_port_get_recv_buf"/>
+    <functioncall functionName="lora_port_get_rx_pos"/>
+    <functioncall functionName="lora_port_init_instance"/>
+    <functioncall functionName="lora_port_set_queue"/>
+    <functioncall functionName="lora_port_start"/>
+    <functioncall functionName="lora_port_stop"/>
+    <functioncall functionName="lora_process_task"/>
+    <functioncall functionName="lora_send_command_async"/>
+    <functioncall functionName="lora_send_command_sync"/>
+    <functioncall functionName="lora_tx_task"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="pvPortMalloc"/>
+    <functioncall functionName="rtcm_crc24q"/>
+    <functioncall functionName="rtcm_reassembly_process"/>
+    <functioncall functionName="rtcm_reassembly_reset"/>
+    <functioncall functionName="rtcm_validate_packet"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="strtol"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vPortFree"/>
+    <functioncall functionName="vQueueDelete"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateBinary"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+    <functioncall functionName="xTaskGetTickCount"/>
+  </FileInfo>
+</analyzerinfo>

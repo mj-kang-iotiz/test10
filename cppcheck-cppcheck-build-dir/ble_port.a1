@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1701541324105632404">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_port.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_type.h&quot; not found." verbose="Include file: &quot;board_type.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_bus.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_cortex.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_dma.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_gpio.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found." verbose="Include file: &quot;stm32f4xx_ll_usart.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_port.c" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="14" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/ble/ble_port.c" line="20" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="0" column="0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="395" column="3"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;buffer_len&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;buffer_len&apos; is reassigned a value before the old one has been used." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="204" column="14" info="buffer_len is overwritten"/>
+            <location file="modules/ble/ble_port.c" line="202" column="14" info="buffer_len is assigned"/>
+            <symbol>buffer_len</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;buffer_len&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;buffer_len&apos; is reassigned a value before the old one has been used." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="219" column="14" info="buffer_len is overwritten"/>
+            <location file="modules/ble/ble_port.c" line="204" column="14" info="buffer_len is assigned"/>
+            <symbol>buffer_len</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;name_len&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;name_len&apos;. The initialized value is overwritten before it is read." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="252" column="12" info="name_len is overwritten"/>
+            <location file="modules/ble/ble_port.c" line="246" column="15" info="name_len is initialized"/>
+            <symbol>name_len</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="262" column="24" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;buffer_len&apos; is assigned a value that is never used." verbose="Variable &apos;buffer_len&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="219" column="14"/>
+            <symbol>buffer_len</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;buffer_len&apos; is assigned a value that is never used." verbose="Variable &apos;buffer_len&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="235" column="16"/>
+            <symbol>buffer_len</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;name_len&apos; is assigned a value that is never used." verbose="Variable &apos;name_len&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_port.c">
+            <location file="modules/ble/ble_port.c" line="268" column="20"/>
+            <symbol>name_len</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="202" col="40" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="204" col="40" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="219" col="40" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="235" col="42" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="20" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="246" col="41" call-argexpr="device_name" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="252" col="38" call-argexpr="device_name" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.c:289:5" call-funcname="ble_uart5_send" call-argnr="1" file="modules/ble/ble_port.c" line="267" col="25" call-argexpr="temp_buf" call-argvaluetype="7" call-argvalue="100" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="268" col="46" call-argexpr="device_name" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.c:302:12" call-funcname="ble_uart5_recv_poll" call-argnr="1" file="modules/ble/ble_port.c" line="332" col="28" call-argexpr="&amp;byte" call-argvaluetype="7" call-argvalue="1" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.c:302:12" call-funcname="ble_uart5_recv_poll" call-argnr="2" file="modules/ble/ble_port.c" line="332" col="28" call-argexpr="timeout_ms-elapsed" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0" warning="true">
+  <path file="modules\ble\ble_port.c" line="404" col="68" info="Calling function &apos;ble_uart5_recv_line_poll&apos;, 3rd argument &apos;100&apos; value is 100"/>
+  <path file="modules\ble\ble_port.c" line="327" col="17" info="Assuming condition is false"/>
+</function-call><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="367" col="39" call-argexpr="response" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.c:289:5" call-funcname="ble_uart5_send" call-argnr="1" file="modules/ble/ble_port.c" line="398" col="17" call-argexpr="at_cmd" call-argvaluetype="7" call-argvalue="32" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="404" col="39" call-argexpr="response" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_port.h:18:5" call-funcname="ble_uart5_recv_line_poll" call-argnr="1" file="modules/ble/ble_port.c" line="443" col="39" call-argexpr="response" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_dma_init" lineNumber="38" column="13"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_gpio_init" lineNumber="48" column="13"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_init" lineNumber="76" column="13"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_comm_start" lineNumber="113" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_hw_init" lineNumber="152" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_configure_module" lineNumber="174" column="12"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_send" lineNumber="289" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_recv_poll" lineNumber="302" column="12"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_recv_line_poll" lineNumber="319" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_uart5_change_baudrate" lineNumber="349" column="12"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_send_at_command_sync" lineNumber="358" column="12"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_send_uart_change_command" lineNumber="391" column="12"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_set_at_cmd_mode" lineNumber="460" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_set_bypass_mode" lineNumber="466" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_init_instance" lineNumber="553" column="5"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_start" lineNumber="572" column="6"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_stop" lineNumber="581" column="6"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_get_rx_pos" lineNumber="590" column="10"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_get_recv_buf" lineNumber="595" column="7"/>
+    <functiondecl file="modules/ble/ble_port.c" functionName="ble_port_set_queue" lineNumber="599" column="6"/>
+    <functioncall functionName="DMA1"/>
+    <functioncall functionName="DMA1_Stream0_IRQn"/>
+    <functioncall functionName="DR"/>
+    <functioncall functionName="GPIOC"/>
+    <functioncall functionName="GPIOD"/>
+    <functioncall functionName="GPIO_PIN_10"/>
+    <functioncall functionName="GPIO_PIN_RESET"/>
+    <functioncall functionName="GPIO_PIN_SET"/>
+    <functioncall functionName="HAL_GPIO_WritePin"/>
+    <functioncall functionName="HAL_GetTick"/>
+    <functioncall functionName="HAL_RCC_GetPCLK1Freq"/>
+    <functioncall functionName="LL_AHB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_DMA1"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_GPIOC"/>
+    <functioncall functionName="LL_AHB1_GRP1_PERIPH_GPIOD"/>
+    <functioncall functionName="LL_APB1_GRP1_EnableClock"/>
+    <functioncall functionName="LL_APB1_GRP1_PERIPH_UART5"/>
+    <functioncall functionName="LL_DMA_CHANNEL_4"/>
+    <functioncall functionName="LL_DMA_DIRECTION_PERIPH_TO_MEMORY"/>
+    <functioncall functionName="LL_DMA_DisableFifoMode"/>
+    <functioncall functionName="LL_DMA_EnableIT_DME"/>
+    <functioncall functionName="LL_DMA_EnableIT_FE"/>
+    <functioncall functionName="LL_DMA_EnableIT_TE"/>
+    <functioncall functionName="LL_DMA_EnableStream"/>
+    <functioncall functionName="LL_DMA_GetDataLength"/>
+    <functioncall functionName="LL_DMA_MDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_MEMORY_INCREMENT"/>
+    <functioncall functionName="LL_DMA_MODE_CIRCULAR"/>
+    <functioncall functionName="LL_DMA_PDATAALIGN_BYTE"/>
+    <functioncall functionName="LL_DMA_PERIPH_NOINCREMENT"/>
+    <functioncall functionName="LL_DMA_PRIORITY_LOW"/>
+    <functioncall functionName="LL_DMA_STREAM_0"/>
+    <functioncall functionName="LL_DMA_SetChannelSelection"/>
+    <functioncall functionName="LL_DMA_SetDataLength"/>
+    <functioncall functionName="LL_DMA_SetDataTransferDirection"/>
+    <functioncall functionName="LL_DMA_SetMemoryAddress"/>
+    <functioncall functionName="LL_DMA_SetMemoryIncMode"/>
+    <functioncall functionName="LL_DMA_SetMemorySize"/>
+    <functioncall functionName="LL_DMA_SetMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphAddress"/>
+    <functioncall functionName="LL_DMA_SetPeriphIncMode"/>
+    <functioncall functionName="LL_DMA_SetPeriphSize"/>
+    <functioncall functionName="LL_DMA_SetStreamPriorityLevel"/>
+    <functioncall functionName="LL_GPIO_AF_8"/>
+    <functioncall functionName="LL_GPIO_Init"/>
+    <functioncall functionName="LL_GPIO_MODE_ALTERNATE"/>
+    <functioncall functionName="LL_GPIO_OUTPUT_PUSHPULL"/>
+    <functioncall functionName="LL_GPIO_PIN_12"/>
+    <functioncall functionName="LL_GPIO_PIN_2"/>
+    <functioncall functionName="LL_GPIO_PULL_NO"/>
+    <functioncall functionName="LL_GPIO_SPEED_FREQ_VERY_HIGH"/>
+    <functioncall functionName="LL_USART_ConfigAsyncMode"/>
+    <functioncall functionName="LL_USART_DATAWIDTH_8B"/>
+    <functioncall functionName="LL_USART_DIRECTION_TX_RX"/>
+    <functioncall functionName="LL_USART_Disable"/>
+    <functioncall functionName="LL_USART_Enable"/>
+    <functioncall functionName="LL_USART_EnableDMAReq_RX"/>
+    <functioncall functionName="LL_USART_EnableIT_ERROR"/>
+    <functioncall functionName="LL_USART_EnableIT_IDLE"/>
+    <functioncall functionName="LL_USART_EnableIT_PE"/>
+    <functioncall functionName="LL_USART_HWCONTROL_NONE"/>
+    <functioncall functionName="LL_USART_Init"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_RXNE"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TC"/>
+    <functioncall functionName="LL_USART_IsActiveFlag_TXE"/>
+    <functioncall functionName="LL_USART_OVERSAMPLING_16"/>
+    <functioncall functionName="LL_USART_PARITY_NONE"/>
+    <functioncall functionName="LL_USART_ReceiveData8"/>
+    <functioncall functionName="LL_USART_STOPBITS_1"/>
+    <functioncall functionName="LL_USART_SetBaudRate"/>
+    <functioncall functionName="LL_USART_TransmitData8"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="NVIC_EnableIRQ"/>
+    <functioncall functionName="NVIC_EncodePriority"/>
+    <functioncall functionName="NVIC_GetPriorityGrouping"/>
+    <functioncall functionName="NVIC_SetPriority"/>
+    <functioncall functionName="UART5"/>
+    <functioncall functionName="UART5_IRQn"/>
+    <functioncall functionName="ble_configure_module"/>
+    <functioncall functionName="ble_send_uart_change_command"/>
+    <functioncall functionName="ble_set_at_cmd_mode"/>
+    <functioncall functionName="ble_set_bypass_mode"/>
+    <functioncall functionName="ble_uart5_change_baudrate"/>
+    <functioncall functionName="ble_uart5_comm_start"/>
+    <functioncall functionName="ble_uart5_dma_init"/>
+    <functioncall functionName="ble_uart5_gpio_init"/>
+    <functioncall functionName="ble_uart5_hw_init"/>
+    <functioncall functionName="ble_uart5_init"/>
+    <functioncall functionName="ble_uart5_recv_line_poll"/>
+    <functioncall functionName="ble_uart5_recv_poll"/>
+    <functioncall functionName="ble_uart5_send"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="stop"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="taskYIELD"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vTaskDelay"/>
+  </FileInfo>
+</analyzerinfo>

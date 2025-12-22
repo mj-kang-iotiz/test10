@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1476024235107812697">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.c" line="1" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_ubx.h&quot; not found." verbose="Include file: &quot;gps_ubx.h&quot; not found.">
+            <location file="modules/gps/ubx_init.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/ubx_init.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.c" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gps/ubx_init.c" line="12" column="0"/>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;user_data&apos; can be declared as pointer to const. However it seems that &apos;on_init_complete&apos; is a callback function, if &apos;user_data&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;user_data&apos; can be declared as pointer to const. However it seems that &apos;on_init_complete&apos; is a callback function, if &apos;user_data&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/gps/ubx_init.c">
+            <location file="modules/gps/ubx_init.c" line="351" column="70" info="Parameter &apos;user_data&apos; can be declared as pointer to const"/>
+            <location file="modules/gps/ubx_init.c" line="381" column="9" info="You might need to cast the function pointer here"/>
+            <symbol>user_data</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gps/ubx_init.c" functionName="on_init_complete" lineNumber="351" column="13"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_rover_init" lineNumber="363" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_base_init" lineNumber="370" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_moving_base_init" lineNumber="377" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="on_factory_reset_complete" lineNumber="384" column="13"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_factory_reset" lineNumber="411" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_disable_time_mode" lineNumber="447" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="on_mode_enable_complete" lineNumber="483" column="13"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="on_position_set_complete" lineNumber="501" column="13"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_set_fixed_position_async" lineNumber="542" column="6"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="on_survey_in_complete" lineNumber="623" column="13"/>
+    <functiondecl file="modules/gps/ubx_init.c" functionName="ubx_set_survey_in_mode_async" lineNumber="641" column="6"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="UBX_CFG_LAYER_RAM"/>
+    <functioncall functionName="UBX_INIT_STATE_DONE"/>
+    <functioncall functionName="UBX_INIT_STATE_ERROR"/>
+    <functioncall functionName="UBX_INIT_STATE_RUNNING"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="on_complete"/>
+    <functioncall functionName="on_factory_reset_complete"/>
+    <functioncall functionName="on_init_complete"/>
+    <functioncall functionName="on_mode_enable_complete"/>
+    <functioncall functionName="on_position_set_complete"/>
+    <functioncall functionName="on_survey_in_complete"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ubx_init_async_start"/>
+    <functioncall functionName="ubx_send_cfg_cfg"/>
+    <functioncall functionName="ubx_send_valset_cb"/>
+    <functioncall functionName="ubx_send_valset_sync"/>
+  </FileInfo>
+</analyzerinfo>

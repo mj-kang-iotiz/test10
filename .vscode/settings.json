@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "stm32f4xx_ll_pwr.h": "c",
+        "gps_app.h": "c",
+        "stm32f4xx_ll_utils.h": "c",
+        "stm32f4xx_ll_bus.h": "c",
+        "gps.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "gsm_port.h": "c",
+        "gsm.h": "c",
+        "gpio.h": "c",
+        "stm32f4xx_ll_rcc.h": "c",
+        "freertos.h": "c",
+        "stdint.h": "c",
+        "gps_types.h": "c",
+        "stm32f4xx_ll_system.h": "c",
+        "gps_port.h": "c",
+        "log.h": "c",
+        "gps_nmea.h": "c",
+        "gps_ubx.h": "c",
+        "stm32f4xx_ll_dma.h": "c",
+        "board_config.h": "c",
+        "led.h": "c",
+        "stdbool.h": "c",
+        "rs485_cmd.h": "c",
+        "queue.h": "c",
+        "ble.h": "c",
+        "task.h": "c",
+        "f9p_baudrate_config.h": "c"
+    }
+}

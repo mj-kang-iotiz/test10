@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="11593035577107077900">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;softuart.h&quot; not found." verbose="Include file: &quot;softuart.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="1" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx.h&quot; not found." verbose="Include file: &quot;stm32f4xx.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485.h&quot; not found." verbose="Include file: &quot;rs485.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.h" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.c" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.c" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_app.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_type.h&quot; not found." verbose="Include file: &quot;board_type.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_app.h&quot; not found." verbose="Include file: &quot;gps_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lora_app.h&quot; not found." verbose="Include file: &quot;lora_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="14" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm_app.h&quot; not found." verbose="Include file: &quot;gsm_app.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="15" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm.h&quot; not found." verbose="Include file: &quot;gsm.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="16" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;lte_init.h&quot; not found." verbose="Include file: &quot;lte_init.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="17" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485.h&quot; not found." verbose="Include file: &quot;rs485.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="18" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/rs485/rs485_port.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rs485.h&quot; not found." verbose="Include file: &quot;rs485.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/rs485/rs485_port.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/rs485/rs485_app.c" line="26" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="0" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pos&apos; can be reduced." verbose="The scope of the variable &apos;pos&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="140" column="10"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;total_received&apos; can be reduced." verbose="The scope of the variable &apos;total_received&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="143" column="10"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pos&apos; is assigned a value that is never used." verbose="Variable &apos;pos&apos; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="140" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="143" column="25"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="161" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/rs485/rs485_app.c">
+            <location file="modules/rs485/rs485_app.c" line="167" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="gps_send_timer_callback" lineNumber="32" column="13"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_cmd_parse_process" lineNumber="38" column="6"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_tx_task" lineNumber="102" column="13"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_rx_task" lineNumber="137" column="13"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_init_all" lineNumber="188" column="6"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_get_handle" lineNumber="267" column="10"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_send" lineNumber="275" column="6"/>
+    <functiondecl file="modules/rs485/rs485_app.c" functionName="rs485_get_instance" lineNumber="299" column="19"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_DEBUG_RAW"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="gps_format_position_data"/>
+    <functioncall functionName="gps_send_timer_callback"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="pdTRUE"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="rs485_at_cmd_handler"/>
+    <functioncall functionName="rs485_cmd_parse_process"/>
+    <functioncall functionName="rs485_port_get_recv_buf"/>
+    <functioncall functionName="rs485_port_get_rx_pos"/>
+    <functioncall functionName="rs485_port_init_instance"/>
+    <functioncall functionName="rs485_port_set_queue"/>
+    <functioncall functionName="rs485_port_start"/>
+    <functioncall functionName="rs485_rx_task"/>
+    <functioncall functionName="rs485_send"/>
+    <functioncall functionName="rs485_tx_task"/>
+    <functioncall functionName="rx_enable"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="tx_enable"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+    <functioncall functionName="xTimerCreate"/>
+  </FileInfo>
+</analyzerinfo>

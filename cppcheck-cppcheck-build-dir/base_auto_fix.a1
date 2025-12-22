@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5137819408004496561">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_nmea.h&quot; not found." verbose="Include file: &quot;gps_nmea.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ntrip_app.h&quot; not found." verbose="Include file: &quot;ntrip_app.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gsm_port.h&quot; not found." verbose="Include file: &quot;gsm_port.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/ubx_init.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;timers.h&quot; not found." verbose="Include file: &quot;timers.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.c" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.c" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.c" line="12" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble_app.h&quot; not found." verbose="Include file: &quot;ble_app.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stdbool.h&quot; not found." verbose="Include file: &quot;stdbool.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="14" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;led.h&quot; not found." verbose="Include file: &quot;led.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="15" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.c" line="21" column="0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!switch_to_base_fixed_mode()&apos; is always false" verbose="Condition &apos;!switch_to_base_fixed_mode()&apos; is always false" cwe="570" file0="modules/gps/base_auto_fix.c">
+            <location file="modules/gps/base_auto_fix.c" line="731" column="13" info="Condition &apos;!switch_to_base_fixed_mode()&apos; is always false"/>
+            <location file="modules/gps/base_auto_fix.c" line="731" column="39" info="Calling function &apos;switch_to_base_fixed_mode&apos; returns 1"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/gps/gps_app.h:66:8" call-funcname="gps_get_instance_handle" call-argnr="1" file="modules/gps/base_auto_fix.c" line="332" col="40" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_init" lineNumber="65" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_start" lineNumber="134" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_stop" lineNumber="155" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_get_state" lineNumber="184" column="23"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_on_gps_fix_changed" lineNumber="198" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_on_gga_update" lineNumber="240" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_on_ntrip_connected" lineNumber="262" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_get_average_coord" lineNumber="282" column="6"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="averaging_timer_callback" lineNumber="317" column="13"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="status_timer_callback" lineNumber="330" column="13"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="calculate_average_with_outlier_removal" lineNumber="371" column="13"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="switch_to_base_fixed_mode" lineNumber="524" column="13"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="shutdown_ntrip_and_lte" lineNumber="669" column="13"/>
+    <functiondecl file="modules/gps/base_auto_fix.c" functionName="base_auto_fix_worker_task" lineNumber="697" column="13"/>
+    <functioncall functionName="LED_COLOR_NONE"/>
+    <functioncall functionName="LED_ID_1"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="averaging_timer_callback"/>
+    <functioncall functionName="base_auto_fix_worker_task"/>
+    <functioncall functionName="ble_send"/>
+    <functioncall functionName="calculate_average_with_outlier_removal"/>
+    <functioncall functionName="fabs"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fix"/>
+    <functioncall functionName="gps_get_instance_handle"/>
+    <functioncall functionName="gsm_port_power_off"/>
+    <functioncall functionName="led_get_color"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="led_set_state"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="ntrip_is_connected"/>
+    <functioncall functionName="ntrip_stop"/>
+    <functioncall functionName="pdFALSE"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="pdTRUE"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="shutdown_ntrip_and_lte"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="sqrt"/>
+    <functioncall functionName="status_timer_callback"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="switch_to_base_fixed_mode"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vQueueDelete"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueReset"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xTaskCreate"/>
+    <functioncall functionName="xTimerCreate"/>
+    <functioncall functionName="xTimerStart"/>
+    <functioncall functionName="xTimerStop"/>
+  </FileInfo>
+</analyzerinfo>

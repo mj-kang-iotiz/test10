@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1807972150215933508">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/gps/gps.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_config.h&quot; not found." verbose="Include file: &quot;gps_config.h&quot; not found.">
+            <location file="lib/gps/gps_types.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_types.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_nmea.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_nmea.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_ubx.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_unicore.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps_unicore.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/rtcm.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/rtcm.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="lib/gps/gps.h" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="11" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="12" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.h" line="13" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_config.h&quot; not found." verbose="Include file: &quot;gps_config.h&quot; not found.">
+            <location file="lib/gps/gps.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;parser.h&quot; not found." verbose="Include file: &quot;parser.h&quot; not found.">
+            <location file="lib/gps/gps.c" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gps/gps.c" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/gps/gps.c" line="10" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="lib/gps/gps.c">
+            <location file="lib/gps/gps.c" line="0" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="lib/gps/gps.c:17:6" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="18" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:12:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="32" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:13:23" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="44" col="45" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:61:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="62" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:14:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="75" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:15:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="87" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:92:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="93" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:104:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="105" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:110:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="111" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:114:23" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="116" col="45" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:132:6" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="133" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="lib/gps/gps.c:17:6" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="18" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:12:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="32" col="3" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:61:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="62" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:14:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="75" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:92:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="93" col="7" value="0"/>
+    <unsafe-usage my-id="lib/gps/gps.c:110:20" my-argnr="1" my-argname="gps" file="lib/gps/gps.c" line="111" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/gps/gps.c" functionName="_gps_gga_raw_add" lineNumber="17" column="6"/>
+    <functiondecl file="lib/gps/gps.c" functionName="add_nmea_chksum" lineNumber="31" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="check_nmea_chksum" lineNumber="41" column="23"/>
+    <functiondecl file="lib/gps/gps.c" functionName="add_payload" lineNumber="61" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="term_add" lineNumber="74" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="term_next" lineNumber="86" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="term_add_unicore" lineNumber="92" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="term_next_unicore" lineNumber="104" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="add_unicore_chksum" lineNumber="110" column="20"/>
+    <functiondecl file="lib/gps/gps.c" functionName="check_unicore_chksum" lineNumber="114" column="23"/>
+    <functiondecl file="lib/gps/gps.c" functionName="gps_init" lineNumber="132" column="6"/>
+    <functiondecl file="lib/gps/gps.c" functionName="gps_parse_process" lineNumber="146" column="6"/>
+    <functiondecl file="lib/gps/gps.c" functionName="gps_set_evt_handler" lineNumber="362" column="6"/>
+    <functioncall functionName="PARSER_CHAR_HEX_TO_NUM"/>
+    <functioncall functionName="add_nmea_chksum"/>
+    <functioncall functionName="add_payload"/>
+    <functioncall functionName="add_unicore_chksum"/>
+    <functioncall functionName="check_nmea_chksum"/>
+    <functioncall functionName="check_unicore_chksum"/>
+    <functioncall functionName="gps_parse_nmea_term"/>
+    <functioncall functionName="gps_parse_ubx"/>
+    <functioncall functionName="gps_parse_unicore_bin"/>
+    <functioncall functionName="gps_parse_unicore_term"/>
+    <functioncall functionName="gps_unicore_bin_header_t"/>
+    <functioncall functionName="hpd_unicore_bestnavb_t"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="term_add"/>
+    <functioncall functionName="term_add_unicore"/>
+    <functioncall functionName="term_next"/>
+    <functioncall functionName="term_next_unicore"/>
+    <functioncall functionName="ubx_cmd_handler_init"/>
+    <functioncall functionName="ubx_init_context_init"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+  </FileInfo>
+</analyzerinfo>

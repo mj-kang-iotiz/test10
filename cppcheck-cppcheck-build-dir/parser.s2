@@ -1,0 +1,7 @@
+parse_int32
+parse_uint32
+parse_hex
+parse_double
+parse_char
+parse_string
+parse_string_quoted

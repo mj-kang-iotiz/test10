@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17852979300538808375">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/gsm/tcp_socket.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="lib/gsm/gsm.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/gsm.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="lib/gsm/tcp_socket.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="lib/gsm/tcp_socket.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/tcp_socket.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/tcp_socket.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/tcp_socket.c" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/gsm/tcp_socket.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/gsm/tcp_socket.c" line="9" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="lib/gsm/gsm.h:370:5" call-funcname="gsm_tcp_open" call-argnr="6" file="lib/gsm/tcp_socket.c" line="70" col="25" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:370:5" call-funcname="gsm_tcp_open" call-argnr="9" file="lib/gsm/tcp_socket.c" line="70" col="25" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:397:5" call-funcname="gsm_tcp_send" call-argnr="5" file="lib/gsm/tcp_socket.c" line="96" col="25" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/gsm/gsm.h:383:5" call-funcname="gsm_tcp_close" call-argnr="3" file="lib/gsm/tcp_socket.c" line="161" col="26" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="lib/gsm/tcp_socket.h:92:17" my-argnr="1" my-argname="sock" file="lib/gsm/tcp_socket.c" line="265" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="lib/gsm/tcp_socket.h:92:17" my-argnr="1" my-argname="sock" file="lib/gsm/tcp_socket.c" line="265" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_socket_create" lineNumber="29" column="15"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_connect" lineNumber="64" column="5"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_send" lineNumber="87" column="5"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_set_recv_timeout" lineNumber="105" column="6"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_recv" lineNumber="116" column="5"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_close" lineNumber="152" column="5"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_close_force" lineNumber="171" column="5"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_socket_destroy" lineNumber="187" column="6"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_available" lineNumber="210" column="8"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="_internal_recv_callback" lineNumber="219" column="13"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="_internal_close_callback" lineNumber="244" column="13"/>
+    <functiondecl file="lib/gsm/tcp_socket.c" functionName="tcp_get_socket_state" lineNumber="264" column="17"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="_internal_close_callback"/>
+    <functioncall functionName="_internal_recv_callback"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="gsm_tcp_close"/>
+    <functioncall functionName="gsm_tcp_close_force"/>
+    <functioncall functionName="gsm_tcp_open"/>
+    <functioncall functionName="gsm_tcp_send"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="pvPortMalloc"/>
+    <functioncall functionName="tcp_close"/>
+    <functioncall functionName="tcp_pbuf_dequeue"/>
+    <functioncall functionName="tcp_pbuf_free"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="uxQueueMessagesWaiting"/>
+    <functioncall functionName="vPortFree"/>
+    <functioncall functionName="vQueueDelete"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+  </FileInfo>
+</analyzerinfo>

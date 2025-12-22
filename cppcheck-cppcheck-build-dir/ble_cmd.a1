@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7481220125308499400">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_cmd.c" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_cmd.c" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_cmd.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/ble/ble_cmd.c" line="16" column="0"/>
+        </error>
+        <error id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: inst-&gt;parser.data" verbose="Buffer is accessed out of bounds: inst-&gt;parser.data" cwe="788" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="143" column="71" info="Buffer overrun"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;unsigned int *&apos;." verbose="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;unsigned int *&apos;." cwe="686" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="354" column="11"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="245" column="5"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="354" column="11"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buf&apos; can be reduced." verbose="The scope of the variable &apos;buf&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="346" column="10"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_ok_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_ok_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="45" column="37" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="78" column="13" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_err_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_err_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="50" column="38" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="79" column="16" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_rdy_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_rdy_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="55" column="38" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="80" column="16" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_advertising_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_advertising_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="60" column="46" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="81" column="22" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_connected_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_connected_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="65" column="44" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="82" column="20" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_disconnected_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;inst&apos; can be declared as pointer to const. However it seems that &apos;bot_disconnected_handler&apos; is a callback function, if &apos;inst&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="70" column="47" info="Parameter &apos;inst&apos; can be declared as pointer to const"/>
+            <location file="modules/ble/ble_cmd.c" line="83" column="23" info="You might need to cast the function pointer here"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="279" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="303" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="317" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="332" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="348" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="404" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="412" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="420" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="428" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;lat&apos; is assigned a value that is never used." verbose="Variable &apos;lat&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="359" column="9"/>
+            <symbol>lat</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;lon&apos; is assigned a value that is never used." verbose="Variable &apos;lon&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="366" column="9"/>
+            <symbol>lon</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;alt&apos; is assigned a value that is never used." verbose="Variable &apos;alt&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_cmd.c">
+            <location file="modules/ble/ble_cmd.c" line="373" column="9"/>
+            <symbol>alt</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="261" col="9" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="274" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="299" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="313" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="328" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="342" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="362" col="9" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="369" col="9" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="376" col="9" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="387" col="17" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="397" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="1" file="modules/ble/ble_cmd.c" line="408" col="5" call-argexpr="device_name" call-argvaluetype="7" call-argvalue="40" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="408" col="5" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="1" file="modules/ble/ble_cmd.c" line="416" col="5" call-argexpr="id" call-argvaluetype="7" call-argvalue="40" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="416" col="5" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="1" file="modules/ble/ble_cmd.c" line="424" col="5" call-argexpr="pw" call-argvaluetype="7" call-argvalue="40" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="424" col="5" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="1" file="modules/ble/ble_cmd.c" line="432" col="5" call-argexpr="loc" call-argvaluetype="7" call-argvalue="70" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:112:6" call-funcname="ble_send" call-argnr="3" file="modules/ble/ble_cmd.c" line="432" col="5" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:115:6" my-argnr="1" my-argname="inst" file="modules/ble/ble_cmd.c" line="117" col="9" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:33:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="283" col="30" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:34:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="306" col="24" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:35:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="320" col="24" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:36:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="335" col="24" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:115:6" my-argnr="1" my-argname="inst" file="modules/ble/ble_cmd.c" line="117" col="9" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:33:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="283" col="30" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:34:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="306" col="24" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:35:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="320" col="24" value="0"/>
+    <unsafe-usage my-id="modules/ble/ble_cmd.c:36:13" my-argnr="2" my-argname="param" file="modules/ble/ble_cmd.c" line="335" col="24" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_ok_handler" lineNumber="45" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_err_handler" lineNumber="50" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_rdy_handler" lineNumber="55" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_advertising_handler" lineNumber="60" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_connected_handler" lineNumber="65" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="bot_disconnected_handler" lineNumber="70" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="ble_app_cmd_handler" lineNumber="101" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="ble_at_cmd_handler" lineNumber="115" column="6"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="sd_handler" lineNumber="239" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="sc_handler" lineNumber="277" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="sm_handler" lineNumber="301" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="si_handler" lineNumber="315" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="sp_handler" lineNumber="330" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="sg_handler" lineNumber="344" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="ss_handler" lineNumber="391" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="gd_handler" lineNumber="402" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="gi_handler" lineNumber="410" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="gp_handler" lineNumber="418" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="gg_handler" lineNumber="426" column="13"/>
+    <functiondecl file="modules/ble/ble_cmd.c" functionName="rs_handler" lineNumber="434" column="13"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="NVIC_SystemReset"/>
+    <functioncall functionName="at_mode"/>
+    <functioncall functionName="atof"/>
+    <functioncall functionName="ble_get_handle"/>
+    <functioncall functionName="ble_send"/>
+    <functioncall functionName="ble_uart5_recv_line_poll"/>
+    <functioncall functionName="bot_advertising_handler"/>
+    <functioncall functionName="bot_connected_handler"/>
+    <functioncall functionName="bot_disconnected_handler"/>
+    <functioncall functionName="bot_err_handler"/>
+    <functioncall functionName="bot_ok_handler"/>
+    <functioncall functionName="bot_rdy_handler"/>
+    <functioncall functionName="bypass_mode"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_erase"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="flash_params_set_ble_device_name"/>
+    <functioncall functionName="flash_params_set_manual_position"/>
+    <functioncall functionName="flash_params_set_ntrip_id"/>
+    <functioncall functionName="flash_params_set_ntrip_mountpoint"/>
+    <functioncall functionName="flash_params_set_ntrip_port"/>
+    <functioncall functionName="flash_params_set_ntrip_pw"/>
+    <functioncall functionName="flash_params_set_ntrip_url"/>
+    <functioncall functionName="flash_params_write"/>
+    <functioncall functionName="gd_handler"/>
+    <functioncall functionName="gg_handler"/>
+    <functioncall functionName="gi_handler"/>
+    <functioncall functionName="gp_handler"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="rs_handler"/>
+    <functioncall functionName="sc_handler"/>
+    <functioncall functionName="sd_handler"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="sg_handler"/>
+    <functioncall functionName="si_handler"/>
+    <functioncall functionName="sm_handler"/>
+    <functioncall functionName="sp_handler"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="ss_handler"/>
+    <functioncall functionName="sscanf"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strrchr"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="xSemaphoreGive"/>
+  </FileInfo>
+</analyzerinfo>

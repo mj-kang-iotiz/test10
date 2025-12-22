@@ -1,0 +1,4 @@
+gps_parse_number call:[PARSER_CHAR_DEC_TO_NUM,PARSER_CHAR_IS_NUM] noreturn:[PARSER_CHAR_DEC_TO_NUM]
+gps_parse_double call:[PARSER_CHAR_DEC_TO_NUM,PARSER_CHAR_IS_NUM]
+gps_parse_float call:[PARSER_CHAR_DEC_TO_NUM,PARSER_CHAR_IS_NUM]
+gps_parse_character

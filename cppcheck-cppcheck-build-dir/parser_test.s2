@@ -1,0 +1,2 @@
+my_test call:[parse_char,parse_double,parse_int32,parse_string,printf] noreturn:[printf]
+main call:[my_test,printf]

@@ -1,0 +1,7 @@
+ubx_send_ll call:[LL_USART_IsActiveFlag_TC,LL_USART_IsActiveFlag_TXE,LL_USART_TransmitData8] noreturn:[LL_USART_TransmitData8]
+wait_for_ack_ll call:[HAL_GetTick,LL_USART_IsActiveFlag_RXNE,LL_USART_ReceiveData8,return,sizeof]
+f9p_set_uart_baudrate call:[return,sizeof,ubx_send_ll,wait_for_ack_ll] noreturn:[return]
+f9p_poll_uart_config call:[HAL_GetTick,LL_USART_IsActiveFlag_RXNE,LL_USART_ReceiveData8,sizeof,ubx_send_ll]
+change_stm32_baudrate_ll call:[HAL_RCC_GetPCLK1Freq,LL_USART_Disable,LL_USART_Enable,LL_USART_SetBaudRate] noreturn:[LL_USART_Enable]
+f9p_init_uart1_baudrate_115200 call:[HAL_Delay,LOG_ERR,LOG_INFO,LOG_WARN,change_stm32_baudrate_ll,f9p_poll_uart_config,f9p_set_uart_baudrate] noreturn:[HAL_Delay,LOG_ERR,LOG_WARN]
+f9p_init_rover_uart1_baudrate_115200 call:[HAL_Delay,LOG_ERR,LOG_INFO,LOG_WARN,change_stm32_baudrate_ll,f9p_poll_uart_config,f9p_set_uart_baudrate] noreturn:[HAL_Delay,LOG_ERR,LOG_WARN]

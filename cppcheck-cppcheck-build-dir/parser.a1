@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="9042842170505348056">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/parser/parser.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/parser/parser.h" line="5" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="lib/parser/parser.c">
+            <location file="lib/parser/parser.c" line="0" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="lib/parser/parser.h:21:9" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="17" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:22:10" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="39" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:23:10" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="56" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:24:8" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="76" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.c:104:6" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="106" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:26:9" my-argnr="1" my-argname="src" file="lib/parser/parser.c" line="122" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:27:9" my-argnr="1" my-argname="src" file="lib/parser/parser.c" line="177" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="lib/parser/parser.h:21:9" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="17" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:22:10" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="39" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:23:10" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="56" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:24:8" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="76" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.c:104:6" my-argnr="1" my-argname="str" file="lib/parser/parser.c" line="106" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:26:9" my-argnr="1" my-argname="src" file="lib/parser/parser.c" line="122" col="20" value="0"/>
+    <unsafe-usage my-id="lib/parser/parser.h:27:9" my-argnr="1" my-argname="src" file="lib/parser/parser.c" line="177" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/parser/parser.c" functionName="parse_int32" lineNumber="13" column="9"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_uint32" lineNumber="36" column="10"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_hex" lineNumber="54" column="10"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_double" lineNumber="71" column="8"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_char" lineNumber="104" column="6"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_string" lineNumber="121" column="9"/>
+    <functiondecl file="lib/parser/parser.c" functionName="parse_string_quoted" lineNumber="176" column="9"/>
+  </FileInfo>
+</analyzerinfo>

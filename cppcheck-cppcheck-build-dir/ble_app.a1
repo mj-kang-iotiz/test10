@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="6314922523957498770">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.h" line="10" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/ble/ble_app.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_app.c" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_port.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble.h&quot; not found." verbose="Include file: &quot;ble.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/ble/ble_port.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/ble/ble_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/ble/ble_app.c" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/ble/ble_app.c" line="12" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="0" column="0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." verbose="%lu in format string (no. 1) requires &apos;unsigned long&apos; but the argument type is &apos;unsigned int&apos;." cwe="686" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="563" column="3"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pos&apos; can be reduced." verbose="The scope of the variable &apos;pos&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="160" column="10"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;total_received&apos; can be reduced." verbose="The scope of the variable &apos;total_received&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="163" column="10"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="119" column="18" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;params&apos; is assigned a value that is never used." verbose="Variable &apos;params&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="119" column="25"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;params&apos; is assigned a value that is never used." verbose="Variable &apos;params&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="119" column="18"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pos&apos; is assigned a value that is never used." verbose="Variable &apos;pos&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="160" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="163" column="25"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="181" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/ble/ble_app.c">
+            <location file="modules/ble/ble_app.c" line="196" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="1" file="modules/ble/ble_app.c" line="504" col="53" call-argexpr="at_cmd" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="3" file="modules/ble/ble_app.c" line="504" col="53" call-argexpr="response" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="1" file="modules/ble/ble_app.c" line="536" col="53" call-argexpr="at_cmd" call-argvaluetype="7" call-argvalue="16" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="3" file="modules/ble/ble_app.c" line="536" col="53" call-argexpr="response" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="1" file="modules/ble/ble_app.c" line="569" col="53" call-argexpr="at_cmd" call-argvaluetype="7" call-argvalue="64" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:115:17" call-funcname="ble_send_at_command_async" call-argnr="3" file="modules/ble/ble_app.c" line="569" col="53" call-argexpr="response" call-argvaluetype="7" call-argvalue="256" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:142:6" call-funcname="ble_send_at_cmd_truly_async" call-argnr="1" file="modules/ble/ble_app.c" line="827" col="37" call-argexpr="at_cmd" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/ble/ble_app.h:142:6" call-funcname="ble_send_at_cmd_truly_async" call-argnr="2" file="modules/ble/ble_app.c" line="827" col="10" my-id="modules/ble/ble_app.c:808:6" my-argnr="2"/>
+<function-call call-id="modules/ble/ble_app.h:142:6" call-funcname="ble_send_at_cmd_truly_async" call-argnr="3" file="modules/ble/ble_app.c" line="827" col="10" my-id="modules/ble/ble_app.c:808:6" my-argnr="3"/>
+<function-call call-id="modules/ble/ble_app.h:142:6" call-funcname="ble_send_at_cmd_truly_async" call-argnr="2" file="modules/ble/ble_app.c" line="837" col="10" my-id="modules/ble/ble_app.c:832:6" my-argnr="1"/>
+<function-call call-id="modules/ble/ble_app.h:142:6" call-funcname="ble_send_at_cmd_truly_async" call-argnr="3" file="modules/ble/ble_app.c" line="837" col="10" my-id="modules/ble/ble_app.c:832:6" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_cmd_parse_process" lineNumber="17" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_tx_task" lineNumber="113" column="13"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_rx_task" lineNumber="156" column="13"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_init_all" lineNumber="230" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_get_handle" lineNumber="308" column="8"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_get_instance" lineNumber="318" column="17"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_send" lineNumber="323" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_send_at_command_async" lineNumber="363" column="17"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_device_name_async" lineNumber="488" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_advon_async" lineNumber="526" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_uart_baudrate_async" lineNumber="559" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_get_connection_state" lineNumber="592" column="24"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_connection_state" lineNumber="607" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_get_current_mode" lineNumber="629" column="12"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_bypass_rx_callback" lineNumber="644" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_check_async_at_timeout" lineNumber="658" column="13"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_send_at_cmd_truly_async" lineNumber="702" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_set_manuf_async" lineNumber="808" column="6"/>
+    <functiondecl file="modules/ble/ble_app.c" functionName="ble_disconnect_async" lineNumber="832" column="6"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_DEBUG_RAW"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="at_mode"/>
+    <functioncall functionName="ble_app_cmd_handler"/>
+    <functioncall functionName="ble_at_cmd_handler"/>
+    <functioncall functionName="ble_check_async_at_timeout"/>
+    <functioncall functionName="ble_cmd_parse_process"/>
+    <functioncall functionName="ble_port_get_recv_buf"/>
+    <functioncall functionName="ble_port_get_rx_pos"/>
+    <functioncall functionName="ble_port_init_instance"/>
+    <functioncall functionName="ble_port_set_queue"/>
+    <functioncall functionName="ble_port_start"/>
+    <functioncall functionName="ble_rx_task"/>
+    <functioncall functionName="ble_send"/>
+    <functioncall functionName="ble_send_at_cmd_truly_async"/>
+    <functioncall functionName="ble_send_at_command_async"/>
+    <functioncall functionName="ble_tx_task"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="bypass_mode"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateBinary"/>
+    <functioncall functionName="xSemaphoreCreateMutex"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+    <functioncall functionName="xTaskGetTickCount"/>
+  </FileInfo>
+</analyzerinfo>

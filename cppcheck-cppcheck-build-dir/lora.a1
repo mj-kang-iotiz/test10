@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1742771141589556730">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/lora/lora.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/lora/lora.c" line="7" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;handle&apos; can be declared as pointer to const" verbose="Parameter &apos;handle&apos; can be declared as pointer to const" cwe="398" file0="lib/lora/lora.c">
+            <location file="lib/lora/lora.c" line="9" column="24" info="Parameter &apos;handle&apos; can be declared as pointer to const"/>
+            <symbol>handle</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/lora/lora.c" functionName="lora_init" lineNumber="9" column="6"/>
+  </FileInfo>
+</analyzerinfo>

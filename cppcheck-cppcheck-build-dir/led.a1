@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15261837733174174294">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx.h&quot; not found." verbose="Include file: &quot;stm32f4xx.h&quot; not found.">
+            <location file="lib/led/led.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32f4xx_hal_gpio.h&quot; not found." verbose="Include file: &quot;stm32f4xx_hal_gpio.h&quot; not found.">
+            <location file="lib/led/led.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/led/led.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/led/led.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="lib/led/led.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="lib/led/led.c" line="8" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="lib/led/led.c:40:6" call-funcname="_set_color" call-argnr="2" file="lib/led/led.c" line="75" col="15" call-argexpr="on_off" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0">
+  <path file="lib\led\led.c" line="97" col="22" info="Calling function &apos;led_set_state&apos;, 2nd argument &apos;false&apos; value is 0"/>
+</function-call><function-call call-id="lib/led/led.h:36:6" call-funcname="led_set_state" call-argnr="2" file="lib/led/led.c" line="86" col="22" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/led/led.h:35:6" call-funcname="led_set_color" call-argnr="2" file="lib/led/led.c" line="96" col="18" call-argexpr="LED_COLOR_NONE" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="lib/led/led.h:36:6" call-funcname="led_set_state" call-argnr="2" file="lib/led/led.c" line="97" col="18" call-argexpr="false" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="lib/led/led.c" functionName="led_set_color" lineNumber="27" column="6"/>
+    <functiondecl file="lib/led/led.c" functionName="led_get_color" lineNumber="35" column="13"/>
+    <functiondecl file="lib/led/led.c" functionName="_set_color" lineNumber="40" column="6"/>
+    <functiondecl file="lib/led/led.c" functionName="led_set_state" lineNumber="72" column="6"/>
+    <functiondecl file="lib/led/led.c" functionName="led_set_toggle" lineNumber="79" column="6"/>
+    <functiondecl file="lib/led/led.c" functionName="led_clear_all" lineNumber="94" column="6"/>
+    <functiondecl file="lib/led/led.c" functionName="led_init" lineNumber="101" column="6"/>
+    <functioncall functionName="GPIOB"/>
+    <functioncall functionName="GPIOC"/>
+    <functioncall functionName="GPIO_PIN_1"/>
+    <functioncall functionName="GPIO_PIN_13"/>
+    <functioncall functionName="GPIO_PIN_14"/>
+    <functioncall functionName="GPIO_PIN_2"/>
+    <functioncall functionName="GPIO_PIN_3"/>
+    <functioncall functionName="GPIO_PIN_4"/>
+    <functioncall functionName="GPIO_PIN_RESET"/>
+    <functioncall functionName="GPIO_PIN_SET"/>
+    <functioncall functionName="HAL_GPIO_WritePin"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="_set_color"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="led_clear_all"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="led_set_state"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

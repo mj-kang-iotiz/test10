@@ -1,0 +1,12 @@
+tcp_socket_create global:[g_sockets] call:[memset,pvPortMalloc,sizeof,vPortFree,vQueueDelete,xQueueCreate,xSemaphoreCreateMutex]
+tcp_connect call:[gsm_tcp_open,xSemaphoreGive,xSemaphoreTake] noreturn:[xSemaphoreGive]
+tcp_send call:[gsm_tcp_send,return]
+tcp_set_recv_timeout call:[xSemaphoreGive,xSemaphoreTake] noreturn:[xSemaphoreGive]
+tcp_recv call:[LOG_ERR,memcpy,pdMS_TO_TICKS,return,tcp_pbuf_free,xQueueReceive,xSemaphoreGive,xSemaphoreTake] noreturn:[xSemaphoreGive]
+tcp_close call:[gsm_tcp_close,xSemaphoreGive,xSemaphoreTake] noreturn:[xSemaphoreGive]
+tcp_close_force call:[gsm_tcp_close_force,xSemaphoreGive,xSemaphoreTake] noreturn:[xSemaphoreGive]
+tcp_socket_destroy global:[g_sockets] call:[tcp_close,tcp_pbuf_free,vPortFree,vQueueDelete,vSemaphoreDelete,xQueueReceive] noreturn:[tcp_close,tcp_pbuf_free,vPortFree]
+tcp_available call:[uxQueueMessagesWaiting] noreturn:[uxQueueMessagesWaiting]
+_internal_recv_callback global:[g_sockets] call:[tcp_pbuf_dequeue,tcp_pbuf_free,xQueueSend,xSemaphoreGive,xSemaphoreTake] noreturn:[tcp_pbuf_free,xSemaphoreGive]
+_internal_close_callback global:[g_sockets] call:[xQueueSend,xSemaphoreGive,xSemaphoreTake] noreturn:[xQueueSend,xSemaphoreGive]
+tcp_get_socket_state

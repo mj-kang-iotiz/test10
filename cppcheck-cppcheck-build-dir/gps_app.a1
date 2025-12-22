@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5546109454412567897">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;semphr.h&quot; not found." verbose="Include file: &quot;semphr.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/gps_app.h" line="9" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;board_config.h&quot; not found." verbose="Include file: &quot;board_config.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="2" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="3" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;FreeRTOS.h&quot; not found." verbose="Include file: &quot;FreeRTOS.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;queue.h&quot; not found." verbose="Include file: &quot;queue.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;task.h&quot; not found." verbose="Include file: &quot;task.h&quot; not found.">
+            <location file="modules/gps/gps_port.h" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_unicore.h&quot; not found." verbose="Include file: &quot;gps_unicore.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps.h&quot; not found." verbose="Include file: &quot;gps.h&quot; not found.">
+            <location file="modules/gps/ubx_init.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/ubx_init.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ntrip_app.h&quot; not found." verbose="Include file: &quot;ntrip_app.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="7" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;rtcm.h&quot; not found." verbose="Include file: &quot;rtcm.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;led.h&quot; not found." verbose="Include file: &quot;led.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/gps_app.c" line="10" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/gps_app.c" line="11" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;flash_params.h&quot; not found." verbose="Include file: &quot;flash_params.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="13" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/gps_app.c" line="14" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/gps_app.c" line="15" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="modules/gps/base_auto_fix.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;gps_nmea.h&quot; not found." verbose="Include file: &quot;gps_nmea.h&quot; not found.">
+            <location file="modules/gps/base_auto_fix.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ble_app.h&quot; not found." verbose="Include file: &quot;ble_app.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="17" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;log.h&quot; not found." verbose="Include file: &quot;log.h&quot; not found.">
+            <location file="modules/gps/gps_app.c" line="23" column="0"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="0" column="0"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;data&apos; can be declared as pointer to const" verbose="Variable &apos;data&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="136" column="27" info="Variable &apos;data&apos; can be declared as pointer to const"/>
+            <symbol>data</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="322" column="18" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="345" column="18" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;bestnav&apos; can be declared as pointer to const" verbose="Variable &apos;bestnav&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="616" column="37" info="Variable &apos;bestnav&apos; can be declared as pointer to const"/>
+            <symbol>bestnav</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;user_data&apos; can be declared as pointer to const" verbose="Parameter &apos;user_data&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="722" column="44" info="Parameter &apos;user_data&apos; can be declared as pointer to const"/>
+            <symbol>user_data</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;user_data&apos; can be declared as pointer to const. However it seems that &apos;base_station_cb&apos; is a callback function, if &apos;user_data&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;user_data&apos; can be declared as pointer to const. However it seems that &apos;base_station_cb&apos; is a callback function, if &apos;user_data&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="730" column="62" info="Parameter &apos;user_data&apos; can be declared as pointer to const"/>
+            <location file="modules/gps/gps_app.c" line="802" column="62" info="You might need to cast the function pointer here"/>
+            <symbol>user_data</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="798" column="34" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;params&apos; can be declared as pointer to const" verbose="Variable &apos;params&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="979" column="20" info="Variable &apos;params&apos; can be declared as pointer to const"/>
+            <symbol>params</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;ns_str&apos; can be declared as const array" verbose="Variable &apos;ns_str&apos; can be declared as const array" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1220" column="8" info="Variable &apos;ns_str&apos; can be declared as const array"/>
+            <symbol>ns_str</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;ew_str&apos; can be declared as const array" verbose="Variable &apos;ew_str&apos; can be declared as const array" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1221" column="8" info="Variable &apos;ew_str&apos; can be declared as const array"/>
+            <symbol>ew_str</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;inst&apos; can be declared as pointer to const" verbose="Variable &apos;inst&apos; can be declared as pointer to const" cwe="398" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1372" column="19" info="Variable &apos;inst&apos; can be declared as pointer to const"/>
+            <symbol>inst</symbol>
+        </error>
+        <error id="moduloofone" severity="style" msg="Modulo of one is always equal to zero" verbose="Modulo of one is always equal to zero" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="100" column="57"/>
+        </error>
+        <error id="moduloofone" severity="style" msg="Modulo of one is always equal to zero" verbose="Modulo of one is always equal to zero" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="153" column="39"/>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: lat" verbose="Uninitialized variable: lat" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1261" column="25"/>
+            <symbol>lat</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: lon" verbose="Uninitialized variable: lon" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1261" column="38"/>
+            <symbol>lon</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: msl_alt" verbose="Uninitialized variable: msl_alt" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1262" column="25"/>
+            <symbol>msl_alt</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: ellipsoid_alt" verbose="Uninitialized variable: ellipsoid_alt" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1263" column="25"/>
+            <symbol>ellipsoid_alt</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: heading" verbose="Uninitialized variable: heading" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1264" column="25"/>
+            <symbol>heading</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: fix" verbose="Uninitialized variable: fix" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1265" column="25"/>
+            <symbol>fix</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: sat_num" verbose="Uninitialized variable: sat_num" cwe="457" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1266" column="25"/>
+            <symbol>sat_num</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pos&apos; is assigned a value that is never used." verbose="Variable &apos;pos&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="749" column="14"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="752" column="25"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="867" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_received&apos; is assigned a value that is never used." verbose="Variable &apos;total_received&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="874" column="24"/>
+            <symbol>total_received</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ns&apos; is assigned a value that is never used." verbose="Variable &apos;ns&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1231" column="8"/>
+            <symbol>ns</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ew&apos; is assigned a value that is never used." verbose="Variable &apos;ew&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1232" column="8"/>
+            <symbol>ew</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ns&apos; is assigned a value that is never used." verbose="Variable &apos;ns&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1241" column="8"/>
+            <symbol>ns</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ew&apos; is assigned a value that is never used." verbose="Variable &apos;ew&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1242" column="8"/>
+            <symbol>ew</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;written&apos; is assigned a value that is never used." verbose="Variable &apos;written&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1259" column="15"/>
+            <symbol>written</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;written&apos; is assigned a value that is never used." verbose="Variable &apos;written&apos; is assigned a value that is never used." cwe="563" file0="modules/gps/gps_app.c">
+            <location file="modules/gps/gps_app.c" line="1259" column="7"/>
+            <symbol>written</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="2" file="modules/gps/gps_app.c" line="292" col="32" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="2" file="modules/gps/gps_app.c" line="314" col="32" call-argexpr="buffer" call-argvaluetype="7" call-argvalue="128" call-argvalue-ufr="0"/><function-call call-id="modules/gps/gps_app.h:88:6" call-funcname="gps_config_heading_length_async" call-argnr="1" file="modules/gps/gps_app.c" line="346" col="34" call-argexpr="0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/gps_app.h:88:6" call-funcname="gps_config_heading_length_async" call-argnr="5" file="modules/gps/gps_app.c" line="346" col="34" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/ubx_init.h:13:6" call-funcname="ubx_set_fixed_position_async" call-argnr="6" file="modules/gps/gps_app.c" line="801" col="49" call-argexpr="NULL" call-argvaluetype="0" call-argvalue="0" call-argvalue-ufr="0"/><function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="4" file="modules/gps/gps_app.c" line="292" col="10" my-id="modules/gps/gps_app.c:30:13" my-argnr="5"/>
+<function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="5" file="modules/gps/gps_app.c" line="292" col="10" my-id="modules/gps/gps_app.c:30:13" my-argnr="6"/>
+<function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="4" file="modules/gps/gps_app.c" line="314" col="10" my-id="modules/gps/gps_app.c:34:13" my-argnr="4"/>
+<function-call call-id="modules/gps/gps_app.h:27:6" call-funcname="gps_send_command_async" call-argnr="5" file="modules/gps/gps_app.c" line="314" col="10" my-id="modules/gps/gps_app.c:34:13" my-argnr="5"/>
+<function-call call-id="modules/gps/gps_app.c:30:13" call-funcname="gps_init_um982_base_fixed_async_internal" call-argnr="5" file="modules/gps/gps_app.c" line="329" col="12" my-id="modules/gps/gps_app.c:321:6" my-argnr="2"/>
+<function-call call-id="modules/gps/gps_app.c:30:13" call-funcname="gps_init_um982_base_fixed_async_internal" call-argnr="6" file="modules/gps/gps_app.c" line="329" col="12" my-id="modules/gps/gps_app.c:321:6" my-argnr="3"/>
+<function-call call-id="modules/gps/ubx_init.h:11:6" call-funcname="ubx_factory_reset" call-argnr="2" file="modules/gps/gps_app.c" line="1187" col="8" my-id="modules/gps/gps_app.c:1171:6" my-argnr="2"/>
+<function-call call-id="modules/gps/ubx_init.h:11:6" call-funcname="ubx_factory_reset" call-argnr="3" file="modules/gps/gps_app.c" line="1187" col="8" my-id="modules/gps/gps_app.c:1171:6" my-argnr="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="modules/gps/gps_app.c:91:6" my-argnr="1" my-argname="inst" file="modules/gps/gps_app.c" line="93" col="17" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="modules/gps/gps_app.c:91:6" my-argnr="1" my-argname="inst" file="modules/gps/gps_app.c" line="93" col="17" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="modules/gps/gps_app.c" functionName="_add_gga_avg_data" lineNumber="91" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="_add_hp_avg_data" lineNumber="133" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_um982_base_fixed_async_internal" lineNumber="276" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_um982_base_surveyin_async_internal" lineNumber="298" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_configure_um982_base_mode_async" lineNumber="321" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="baseline_init_complete" lineNumber="337" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_set_heading_length" lineNumber="343" column="7"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_command_callback" lineNumber="388" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_um982_base_async" lineNumber="448" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_um982_rover_async" lineNumber="486" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_evt_handler" lineNumber="520" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_tx_task" lineNumber="642" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="callback_function" lineNumber="722" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="base_station_cb" lineNumber="730" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_process_task" lineNumber="745" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_init_all" lineNumber="895" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_get_instance_handle" lineNumber="1004" column="8"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_gga_avg_can_read" lineNumber="1015" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_get_gga_avg" lineNumber="1026" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_send_command_sync" lineNumber="1045" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_send_command_async" lineNumber="1096" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_send_raw_data" lineNumber="1141" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_factory_reset_async" lineNumber="1171" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_format_position_data" lineNumber="1210" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_config_heading_callback" lineNumber="1288" column="13"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_config_heading_length_async" lineNumber="1356" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_cleanup_instance" lineNumber="1522" column="6"/>
+    <functiondecl file="modules/gps/gps_app.c" functionName="gps_cleanup_all" lineNumber="1658" column="6"/>
+    <functioncall functionName="GPS_ID_BASE"/>
+    <functioncall functionName="GPS_ID_MAX"/>
+    <functioncall functionName="GPS_INIT_NONE"/>
+    <functioncall functionName="LED_COLOR_GREEN"/>
+    <functioncall functionName="LED_COLOR_NONE"/>
+    <functioncall functionName="LED_COLOR_RED"/>
+    <functioncall functionName="LED_COLOR_YELLOW"/>
+    <functioncall functionName="LOG_DEBUG"/>
+    <functioncall functionName="LOG_DEBUG_RAW"/>
+    <functioncall functionName="LOG_ERR"/>
+    <functioncall functionName="LOG_INFO"/>
+    <functioncall functionName="LOG_WARN"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="base_auto_fix_init"/>
+    <functioncall functionName="base_auto_fix_on_gga_update"/>
+    <functioncall functionName="base_auto_fix_on_gps_fix_changed"/>
+    <functioncall functionName="base_auto_fix_start"/>
+    <functioncall functionName="base_station_cb"/>
+    <functioncall functionName="baseline_init_complete"/>
+    <functioncall functionName="ble_send"/>
+    <functioncall functionName="board_get_config"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="flash_params_get_current"/>
+    <functioncall functionName="gps_cleanup_instance"/>
+    <functioncall functionName="gps_config_heading_callback"/>
+    <functioncall functionName="gps_config_heading_length_async"/>
+    <functioncall functionName="gps_evt_handler"/>
+    <functioncall functionName="gps_get_unicore_response"/>
+    <functioncall functionName="gps_id_t"/>
+    <functioncall functionName="gps_init"/>
+    <functioncall functionName="gps_init_command_callback"/>
+    <functioncall functionName="gps_init_um982_base_fixed_async_internal"/>
+    <functioncall functionName="gps_parse_process"/>
+    <functioncall functionName="gps_port_cleanup_instance"/>
+    <functioncall functionName="gps_port_get_recv_buf"/>
+    <functioncall functionName="gps_port_get_rx_pos"/>
+    <functioncall functionName="gps_port_init_instance"/>
+    <functioncall functionName="gps_port_set_queue"/>
+    <functioncall functionName="gps_port_start"/>
+    <functioncall functionName="gps_process_task"/>
+    <functioncall functionName="gps_send_command_async"/>
+    <functioncall functionName="gps_set_evt_handler"/>
+    <functioncall functionName="gps_tx_task"/>
+    <functioncall functionName="led_set_color"/>
+    <functioncall functionName="led_set_state"/>
+    <functioncall functionName="led_set_toggle"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="ntrip_gga_send_queue_initialized"/>
+    <functioncall functionName="ntrip_send_gga_data"/>
+    <functioncall functionName="pdMS_TO_TICKS"/>
+    <functioncall functionName="portMAX_DELAY"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="pvPortMalloc"/>
+    <functioncall functionName="rtcm_send_to_lora"/>
+    <functioncall functionName="send"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="taskENTER_CRITICAL"/>
+    <functioncall functionName="taskEXIT_CRITICAL"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ubx_factory_reset"/>
+    <functioncall functionName="ubx_init_async_get_state"/>
+    <functioncall functionName="ubx_init_async_process"/>
+    <functioncall functionName="ubx_set_fixed_position_async"/>
+    <functioncall functionName="vPortFree"/>
+    <functioncall functionName="vQueueDelete"/>
+    <functioncall functionName="vSemaphoreDelete"/>
+    <functioncall functionName="vTaskDelay"/>
+    <functioncall functionName="vTaskDelete"/>
+    <functioncall functionName="xQueueCreate"/>
+    <functioncall functionName="xQueueReceive"/>
+    <functioncall functionName="xQueueSend"/>
+    <functioncall functionName="xSemaphoreCreateBinary"/>
+    <functioncall functionName="xSemaphoreGive"/>
+    <functioncall functionName="xSemaphoreTake"/>
+    <functioncall functionName="xTaskCreate"/>
+  </FileInfo>
+</analyzerinfo>

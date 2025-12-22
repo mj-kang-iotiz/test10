@@ -1,0 +1,7 @@
+led_set_color global:[led_handle]
+led_get_color global:[led_handle]
+_set_color call:[HAL_GPIO_WritePin,LOG_ERR] noreturn:[HAL_GPIO_WritePin,LOG_ERR]
+led_set_state global:[led_handle] call:[_set_color] noreturn:[_set_color]
+led_set_toggle global:[led_handle] call:[led_set_state] noreturn:[led_set_state]
+led_clear_all call:[led_set_color,led_set_state] noreturn:[led_set_state]
+led_init global:[led_handle] call:[led_clear_all,memset,sizeof] noreturn:[led_clear_all]
