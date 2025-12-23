@@ -480,6 +480,8 @@ const char* event_manager_get_topic_name(event_topic_t topic) {
         "GPS_DATA_READY",
         "GPS_FIX_STATUS_CHANGED",
         "GPS_POSITION_UPDATED",
+        "GPS_INIT_COMPLETE",
+        "GPS_COMMAND_REQUEST",
         "RTCM_DATA_RECEIVED",
         "RTCM_PARSE_COMPLETE",
         "GSM_CONNECTED",

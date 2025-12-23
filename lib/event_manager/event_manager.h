@@ -31,6 +31,8 @@ typedef enum {
     EVENT_GPS_DATA_READY = 0,           // GPS 데이터 수신 완료
     EVENT_GPS_FIX_STATUS_CHANGED,       // GPS Fix 상태 변경
     EVENT_GPS_POSITION_UPDATED,         // GPS 위치 업데이트
+    EVENT_GPS_INIT_COMPLETE,            // GPS 초기화 완료
+    EVENT_GPS_COMMAND_REQUEST,          // GPS 명령 요청 (동기 처리용)
 
     /* RTCM 관련 이벤트 */
     EVENT_RTCM_DATA_RECEIVED,           // RTCM 데이터 수신
