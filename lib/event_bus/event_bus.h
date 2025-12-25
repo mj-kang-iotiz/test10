@@ -1,9 +1,9 @@
 /**
  * @file event_bus.h
- * @brief Event Bus System with Registry Pattern
+ * @brief Event Bus System with Registry Pattern (Full Static Version)
  *
- * Thread-safe event bus implementation using FreeRTOS queues and single-linked lists.
- * Supports publish-subscribe pattern with dynamic subscriber management.
+ * Thread-safe event bus implementation using FreeRTOS queues and static allocation.
+ * Supports publish-subscribe pattern with object pool for events.
  */
 
 #ifndef EVENT_BUS_H
@@ -17,37 +17,54 @@
 #include "semphr.h"
 #include "task.h"
 
-/* Event message structure */
+/* Configuration */
+#define EVENT_BUS_MAX_SUBSCRIBERS   16      // Maximum subscribers per bus
+#define EVENT_MSG_POOL_SIZE         20      // Total event message pool size
+#define EVENT_DATA_MAX_SIZE         512     // Maximum event data size (bytes)
+
+/* Event message structure (static buffer) */
 typedef struct {
-    uint32_t type;          // Event type ID
-    uint32_t timestamp;     // Tick count when event was published
-    void *data;             // Pointer to event data (dynamically allocated)
-    size_t size;            // Size of event data
+    uint32_t type;                          // Event type ID
+    uint32_t timestamp;                     // Tick count when published
+    uint8_t data[EVENT_DATA_MAX_SIZE];      // Event data (static buffer)
+    size_t size;                            // Actual data size used
+    bool in_use;                            // Allocation flag
 } event_msg_t;
 
 /* Event handler callback type */
 typedef void (*event_handler_t)(const event_msg_t *msg);
 
-/* Opaque event bus type */
-typedef struct event_bus_s event_bus_t;
-
-/* Subscriber node (single-linked list) */
-typedef struct subscriber_node_s {
-    uint32_t event_mask;                    // Bitmask of subscribed event types (0 = subscribe all)
-    event_handler_t handler;                // Handler callback function
-    struct subscriber_node_s *next;         // Next subscriber in list
-} subscriber_node_t;
+/* Subscriber structure (static) */
+typedef struct {
+    uint32_t event_mask;                    // Bitmask of subscribed events (0 = all)
+    event_handler_t handler;                // Handler callback
+    bool active;                            // Active flag
+} subscriber_t;
 
 /* Event bus structure */
-struct event_bus_s {
-    const char *name;                       // Bus name for identification
-    QueueHandle_t queue;                    // FreeRTOS queue for event messages
-    subscriber_node_t *subscribers;         // Head of subscriber linked list
-    SemaphoreHandle_t sub_mutex;            // Mutex for subscriber list
+typedef struct {
+    const char *name;                       // Bus name
+    QueueHandle_t queue;                    // FreeRTOS queue
+    subscriber_t subscribers[EVENT_BUS_MAX_SUBSCRIBERS];  // Static subscriber array
+    SemaphoreHandle_t sub_mutex;            // Subscriber list mutex
     TaskHandle_t dispatch_task;             // Dispatch task handle
-    bool running;                           // Dispatch task running flag
-    uint32_t queue_depth;                   // Maximum queue depth
-};
+    bool running;                           // Running flag
+    uint32_t queue_depth;                   // Queue depth
+
+    /* Statistics */
+    uint32_t sub_count;                     // Active subscriber count
+    uint32_t publish_success;               // Successful publishes
+    uint32_t publish_failed;                // Failed publishes
+} event_bus_t;
+
+/* Event message pool (global static) */
+typedef struct {
+    event_msg_t pool[EVENT_MSG_POOL_SIZE];  // Static event pool
+    SemaphoreHandle_t mutex;                // Pool mutex
+    uint32_t allocated;                     // Currently allocated count
+    uint32_t peak;                          // Peak allocation
+    uint32_t failures;                      // Allocation failures
+} event_msg_pool_t;
 
 /**
  * @brief Create a new event bus instance
@@ -73,7 +90,7 @@ void event_bus_destroy(event_bus_t *bus);
  * @param event_mask Bitmask of event types to subscribe to (0 = all events)
  * @param handler Event handler callback
  * @return true Success
- * @return false Failure
+ * @return false Failure (bus full)
  */
 bool event_bus_subscribe(event_bus_t *bus, uint32_t event_mask, event_handler_t handler);
 
@@ -90,19 +107,19 @@ bool event_bus_unsubscribe(event_bus_t *bus, event_handler_t handler);
 /**
  * @brief Publish an event to the bus
  *
- * The event data will be copied and queued for dispatch.
+ * The event data will be copied to the static pool.
  *
  * @param bus Event bus
  * @param type Event type ID
  * @param data Pointer to event data (will be copied)
- * @param size Size of event data
+ * @param size Size of event data (must be <= EVENT_DATA_MAX_SIZE)
  * @return true Event queued successfully
- * @return false Queue full or allocation failed
+ * @return false Queue full, pool exhausted, or size too large
  */
 bool event_bus_publish(event_bus_t *bus, uint32_t type, const void *data, size_t size);
 
 /**
- * @brief Start the dispatch task
+ * @brief Start the dispatch task (called automatically in create)
  *
  * @param bus Event bus
  * @return true Started successfully
@@ -116,6 +133,26 @@ bool event_bus_start(event_bus_t *bus);
  * @param bus Event bus
  */
 void event_bus_stop(event_bus_t *bus);
+
+/**
+ * @brief Get event bus statistics
+ *
+ * @param bus Event bus
+ * @param sub_count Output: active subscriber count
+ * @param publish_success Output: successful publish count
+ * @param publish_failed Output: failed publish count
+ */
+void event_bus_get_stats(event_bus_t *bus, uint32_t *sub_count,
+                         uint32_t *publish_success, uint32_t *publish_failed);
+
+/**
+ * @brief Get event pool statistics
+ *
+ * @param allocated Output: currently allocated messages
+ * @param peak Output: peak allocation
+ * @param failures Output: allocation failures
+ */
+void event_bus_get_pool_stats(uint32_t *allocated, uint32_t *peak, uint32_t *failures);
 
 /* ==================== Registry Functions ==================== */
 
