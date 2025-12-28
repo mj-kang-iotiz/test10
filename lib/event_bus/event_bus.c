@@ -427,42 +427,56 @@ void event_bus_get_stats(event_bus_t *bus,
  * @brief Event dispatch task
  *
  * Receives events from queue and dispatches to subscribers.
+ *
+ * Improvement: Snapshot subscriber handlers before calling them.
+ * This minimizes mutex hold time - subscriber add/remove won't be blocked
+ * by slow handlers.
  */
 static void event_dispatch_task(void *pvParameter) {
     event_bus_t *bus = (event_bus_t*)pvParameter;
     event_msg_t *msg;
 
+    // Handler snapshot buffer (stack allocation, reused each iteration)
+    event_handler_t handler_snapshot[EVENT_BUS_MAX_SUBSCRIBERS];
+    size_t handler_count;
+
     while (bus->running) {
         // Wait for event (blocking)
-        if (xQueueReceive(bus->queue, &msg, portMAX_DELAY) == pdTRUE) {
-            if (!msg) {
-                continue;
-            }
+        if (xQueueReceive(bus->queue, &msg, portMAX_DELAY) != pdTRUE) {
+            continue;
+        }
 
-            // Dispatch to all matching subscribers
-            xSemaphoreTake(bus->sub_mutex, portMAX_DELAY);
+        if (!msg) {
+            continue;
+        }
 
+        // Snapshot interested handlers (mutex held briefly)
+        handler_count = 0;
+        xSemaphoreTake(bus->sub_mutex, portMAX_DELAY);
+        {
             for (int i = 0; i < EVENT_BUS_MAX_SUBSCRIBERS; i++) {
                 subscriber_t *sub = &bus->subscribers[i];
 
-                if (!sub->active) {
+                if (!sub->active || !sub->handler) {
                     continue;
                 }
 
                 // Check if subscriber is interested in this event type
                 if (sub->event_mask == 0 || (sub->event_mask & (1 << msg->type))) {
-                    // Call handler
-                    if (sub->handler) {
-                        sub->handler(msg);
-                    }
+                    handler_snapshot[handler_count++] = sub->handler;
                 }
             }
-
-            xSemaphoreGive(bus->sub_mutex);
-
-            // Free message back to this bus's pool
-            event_msg_free(bus, msg);
         }
+        xSemaphoreGive(bus->sub_mutex);  // Release BEFORE calling handlers!
+
+        // Call handlers WITHOUT holding mutex
+        // This allows subscribe/unsubscribe to happen concurrently
+        for (size_t i = 0; i < handler_count; i++) {
+            handler_snapshot[i](msg);
+        }
+
+        // Free message back to this bus's pool
+        event_msg_free(bus, msg);
     }
 
     vTaskDelete(NULL);
