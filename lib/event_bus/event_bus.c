@@ -19,15 +19,10 @@ typedef struct {
 static event_bus_registry_entry_t g_registry[MAX_EVENT_BUSES] = {0};
 static SemaphoreHandle_t g_registry_mutex = NULL;
 
-/* Global event message pool (static allocation) */
-static event_msg_pool_t g_msg_pool = {0};
-static bool g_pool_initialized = false;
-
 /* Forward declarations */
 static void event_dispatch_task(void *pvParameter);
-static event_msg_t* event_msg_alloc(void);
-static void event_msg_free(event_msg_t *msg);
-static void event_msg_pool_init(void);
+static event_msg_t* event_msg_alloc(event_bus_t *bus);
+static void event_msg_free(event_bus_t *bus, event_msg_t *msg);
 
 /**
  * @brief Initialize registry mutex (called once)
@@ -39,78 +34,59 @@ static void registry_init(void) {
 }
 
 /**
- * @brief Initialize event message pool (called once)
- */
-static void event_msg_pool_init(void) {
-    if (g_pool_initialized) {
-        return;
-    }
-
-    g_msg_pool.mutex = xSemaphoreCreateMutex();
-    g_msg_pool.allocated = 0;
-    g_msg_pool.peak = 0;
-    g_msg_pool.failures = 0;
-
-    // Initialize all messages as free
-    for (int i = 0; i < EVENT_MSG_POOL_SIZE; i++) {
-        g_msg_pool.pool[i].in_use = false;
-    }
-
-    g_pool_initialized = true;
-}
-
-/**
- * @brief Allocate an event message from the pool
+ * @brief Allocate an event message from the per-bus pool
  *
+ * @param bus Event bus
  * @return event_msg_t* Allocated message, NULL if pool exhausted
  */
-static event_msg_t* event_msg_alloc(void) {
-    if (!g_pool_initialized) {
+static event_msg_t* event_msg_alloc(event_bus_t *bus) {
+    if (!bus || !bus->pool_mutex) {
         return NULL;
     }
 
-    xSemaphoreTake(g_msg_pool.mutex, portMAX_DELAY);
+    xSemaphoreTake(bus->pool_mutex, portMAX_DELAY);
 
-    // Find free message
+    // Find free message in this bus's pool
     event_msg_t *msg = NULL;
     for (int i = 0; i < EVENT_MSG_POOL_SIZE; i++) {
-        if (!g_msg_pool.pool[i].in_use) {
-            msg = &g_msg_pool.pool[i];
+        if (!bus->msg_pool[i].in_use) {
+            msg = &bus->msg_pool[i];
             msg->in_use = true;
-            g_msg_pool.allocated++;
+            bus->pool_allocated++;
 
             // Update peak
-            if (g_msg_pool.allocated > g_msg_pool.peak) {
-                g_msg_pool.peak = g_msg_pool.allocated;
+            if (bus->pool_allocated > bus->pool_peak) {
+                bus->pool_peak = bus->pool_allocated;
             }
             break;
         }
     }
 
     if (!msg) {
-        g_msg_pool.failures++;
+        bus->pool_failures++;
     }
 
-    xSemaphoreGive(g_msg_pool.mutex);
+    xSemaphoreGive(bus->pool_mutex);
     return msg;
 }
 
 /**
- * @brief Free an event message back to the pool
+ * @brief Free an event message back to the per-bus pool
  *
+ * @param bus Event bus
  * @param msg Message to free
  */
-static void event_msg_free(event_msg_t *msg) {
-    if (!msg || !g_pool_initialized) {
+static void event_msg_free(event_bus_t *bus, event_msg_t *msg) {
+    if (!bus || !msg || !bus->pool_mutex) {
         return;
     }
 
-    xSemaphoreTake(g_msg_pool.mutex, portMAX_DELAY);
+    xSemaphoreTake(bus->pool_mutex, portMAX_DELAY);
 
     msg->in_use = false;
-    g_msg_pool.allocated--;
+    bus->pool_allocated--;
 
-    xSemaphoreGive(g_msg_pool.mutex);
+    xSemaphoreGive(bus->pool_mutex);
 }
 
 /* ==================== Registry Functions ==================== */
@@ -196,11 +172,6 @@ event_bus_t* event_bus_create(const char *name, uint32_t queue_depth, uint32_t t
         return NULL;
     }
 
-    // Initialize pool on first bus creation
-    if (!g_pool_initialized) {
-        event_msg_pool_init();
-    }
-
     // Allocate bus structure
     event_bus_t *bus = (event_bus_t*)pvPortMalloc(sizeof(event_bus_t));
     if (!bus) {
@@ -216,12 +187,20 @@ event_bus_t* event_bus_create(const char *name, uint32_t queue_depth, uint32_t t
     bus->sub_count = 0;
     bus->publish_success = 0;
     bus->publish_failed = 0;
+    bus->pool_allocated = 0;
+    bus->pool_peak = 0;
+    bus->pool_failures = 0;
 
     // Initialize subscriber array
     for (int i = 0; i < EVENT_BUS_MAX_SUBSCRIBERS; i++) {
         bus->subscribers[i].active = false;
         bus->subscribers[i].handler = NULL;
         bus->subscribers[i].event_mask = 0;
+    }
+
+    // Initialize per-bus message pool
+    for (int i = 0; i < EVENT_MSG_POOL_SIZE; i++) {
+        bus->msg_pool[i].in_use = false;
     }
 
     // Create queue (stores pointers to event_msg_t)
@@ -234,6 +213,15 @@ event_bus_t* event_bus_create(const char *name, uint32_t queue_depth, uint32_t t
     // Create mutex for subscriber list
     bus->sub_mutex = xSemaphoreCreateMutex();
     if (!bus->sub_mutex) {
+        vQueueDelete(bus->queue);
+        vPortFree(bus);
+        return NULL;
+    }
+
+    // Create mutex for message pool
+    bus->pool_mutex = xSemaphoreCreateMutex();
+    if (!bus->pool_mutex) {
+        vSemaphoreDelete(bus->sub_mutex);
         vQueueDelete(bus->queue);
         vPortFree(bus);
         return NULL;
@@ -253,6 +241,7 @@ event_bus_t* event_bus_create(const char *name, uint32_t queue_depth, uint32_t t
     );
 
     if (ret != pdPASS) {
+        vSemaphoreDelete(bus->pool_mutex);
         vSemaphoreDelete(bus->sub_mutex);
         vQueueDelete(bus->queue);
         vPortFree(bus);
@@ -287,15 +276,18 @@ void event_bus_destroy(event_bus_t *bus) {
         event_msg_t *msg;
         while (xQueueReceive(bus->queue, &msg, 0) == pdTRUE) {
             if (msg) {
-                event_msg_free(msg);
+                event_msg_free(bus, msg);
             }
         }
         vQueueDelete(bus->queue);
     }
 
-    // Delete mutex
+    // Delete mutexes
     if (bus->sub_mutex) {
         vSemaphoreDelete(bus->sub_mutex);
+    }
+    if (bus->pool_mutex) {
+        vSemaphoreDelete(bus->pool_mutex);
     }
 
     // Free bus structure
@@ -359,8 +351,8 @@ bool event_bus_publish(event_bus_t *bus, uint32_t type, const void *data, size_t
         return false;
     }
 
-    // Allocate message from pool
-    event_msg_t *msg = event_msg_alloc();
+    // Allocate message from this bus's pool
+    event_msg_t *msg = event_msg_alloc(bus);
     if (!msg) {
         bus->publish_failed++;
         return false;  // Pool exhausted
@@ -379,7 +371,7 @@ bool event_bus_publish(event_bus_t *bus, uint32_t type, const void *data, size_t
     // Queue the message (pointer only)
     if (xQueueSend(bus->queue, &msg, 0) != pdTRUE) {
         // Queue full
-        event_msg_free(msg);
+        event_msg_free(bus, msg);
         bus->publish_failed++;
         return false;
     }
@@ -407,8 +399,13 @@ void event_bus_stop(event_bus_t *bus) {
     }
 }
 
-void event_bus_get_stats(event_bus_t *bus, uint32_t *sub_count,
-                         uint32_t *publish_success, uint32_t *publish_failed) {
+void event_bus_get_stats(event_bus_t *bus,
+                         uint32_t *sub_count,
+                         uint32_t *publish_success,
+                         uint32_t *publish_failed,
+                         uint32_t *pool_allocated,
+                         uint32_t *pool_peak,
+                         uint32_t *pool_failures) {
     if (!bus) {
         return;
     }
@@ -416,20 +413,14 @@ void event_bus_get_stats(event_bus_t *bus, uint32_t *sub_count,
     if (sub_count) *sub_count = bus->sub_count;
     if (publish_success) *publish_success = bus->publish_success;
     if (publish_failed) *publish_failed = bus->publish_failed;
-}
 
-void event_bus_get_pool_stats(uint32_t *allocated, uint32_t *peak, uint32_t *failures) {
-    if (!g_pool_initialized) {
-        return;
+    if (pool_allocated || pool_peak || pool_failures) {
+        xSemaphoreTake(bus->pool_mutex, portMAX_DELAY);
+        if (pool_allocated) *pool_allocated = bus->pool_allocated;
+        if (pool_peak) *pool_peak = bus->pool_peak;
+        if (pool_failures) *pool_failures = bus->pool_failures;
+        xSemaphoreGive(bus->pool_mutex);
     }
-
-    xSemaphoreTake(g_msg_pool.mutex, portMAX_DELAY);
-
-    if (allocated) *allocated = g_msg_pool.allocated;
-    if (peak) *peak = g_msg_pool.peak;
-    if (failures) *failures = g_msg_pool.failures;
-
-    xSemaphoreGive(g_msg_pool.mutex);
 }
 
 /**
@@ -469,8 +460,8 @@ static void event_dispatch_task(void *pvParameter) {
 
             xSemaphoreGive(bus->sub_mutex);
 
-            // Free message back to pool
-            event_msg_free(msg);
+            // Free message back to this bus's pool
+            event_msg_free(bus, msg);
         }
     }
 

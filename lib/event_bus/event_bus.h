@@ -18,9 +18,9 @@
 #include "task.h"
 
 /* Configuration */
-#define EVENT_BUS_MAX_SUBSCRIBERS   16      // Maximum subscribers per bus
-#define EVENT_MSG_POOL_SIZE         20      // Total event message pool size
-#define EVENT_DATA_MAX_SIZE         512     // Maximum event data size (bytes)
+#define EVENT_BUS_MAX_SUBSCRIBERS   12      // Maximum subscribers per bus
+#define EVENT_MSG_POOL_SIZE         15      // Message pool size per bus (not global)
+#define EVENT_DATA_MAX_SIZE         256     // Maximum event data size (bytes)
 
 /* Event message structure (static buffer) */
 typedef struct {
@@ -51,20 +51,19 @@ typedef struct {
     bool running;                           // Running flag
     uint32_t queue_depth;                   // Queue depth
 
+    /* Per-bus message pool (independent allocation) */
+    event_msg_t msg_pool[EVENT_MSG_POOL_SIZE];  // Static message pool
+    SemaphoreHandle_t pool_mutex;           // Pool mutex
+    uint32_t pool_allocated;                // Currently allocated from this pool
+    uint32_t pool_peak;                     // Peak allocation
+
     /* Statistics */
     uint32_t sub_count;                     // Active subscriber count
     uint32_t publish_success;               // Successful publishes
     uint32_t publish_failed;                // Failed publishes
+    uint32_t pool_failures;                 // Pool allocation failures
 } event_bus_t;
 
-/* Event message pool (global static) */
-typedef struct {
-    event_msg_t pool[EVENT_MSG_POOL_SIZE];  // Static event pool
-    SemaphoreHandle_t mutex;                // Pool mutex
-    uint32_t allocated;                     // Currently allocated count
-    uint32_t peak;                          // Peak allocation
-    uint32_t failures;                      // Allocation failures
-} event_msg_pool_t;
 
 /**
  * @brief Create a new event bus instance
@@ -135,24 +134,23 @@ bool event_bus_start(event_bus_t *bus);
 void event_bus_stop(event_bus_t *bus);
 
 /**
- * @brief Get event bus statistics
+ * @brief Get event bus statistics (including pool stats)
  *
  * @param bus Event bus
  * @param sub_count Output: active subscriber count
  * @param publish_success Output: successful publish count
  * @param publish_failed Output: failed publish count
+ * @param pool_allocated Output: currently allocated messages in pool
+ * @param pool_peak Output: peak pool allocation
+ * @param pool_failures Output: pool allocation failures
  */
-void event_bus_get_stats(event_bus_t *bus, uint32_t *sub_count,
-                         uint32_t *publish_success, uint32_t *publish_failed);
-
-/**
- * @brief Get event pool statistics
- *
- * @param allocated Output: currently allocated messages
- * @param peak Output: peak allocation
- * @param failures Output: allocation failures
- */
-void event_bus_get_pool_stats(uint32_t *allocated, uint32_t *peak, uint32_t *failures);
+void event_bus_get_stats(event_bus_t *bus,
+                         uint32_t *sub_count,
+                         uint32_t *publish_success,
+                         uint32_t *publish_failed,
+                         uint32_t *pool_allocated,
+                         uint32_t *pool_peak,
+                         uint32_t *pool_failures);
 
 /* ==================== Registry Functions ==================== */
 
